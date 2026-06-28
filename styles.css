@@ -26,7 +26,7 @@ a{text-decoration:none;color:inherit}
 .lang:hover{border-color:var(--sea);color:var(--sea)}
 
 /* BUTTONS */
-.btn{display:inline-block;border-radius:10px;font-weight:600;font-size:16px;padding:14px 26px;cursor:pointer;transition:.18s;font-family:inherit;text-align:center}
+.btn{display:inline-block;border-radius:10px;font-weight:600;font-size:16px;padding:14px 26px;cursor:pointer;transition:.18s;font-family:inherit;text-align:center;border:none}
 .btn-sm{padding:9px 16px;font-size:14px}
 .btn-lg{padding:17px 34px;font-size:18px}
 .btn-block{display:block;width:100%}
@@ -42,6 +42,9 @@ a{text-decoration:none;color:inherit}
 .hero h1{font-size:clamp(32px,5vw,54px);font-weight:700;color:var(--navy);letter-spacing:-1px}
 .hero-sub{font-size:clamp(16px,2vw,20px);color:var(--mut);margin:20px auto 0;max-width:680px}
 .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+/* Mejora 5: CTA secundario como texto */
+.hero-cta-secondary{display:block;text-align:center;margin-top:16px;color:var(--mut);font-size:15px;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.hero-cta-secondary:hover{color:var(--teal)}
 .hero-trust{display:flex;gap:40px;justify-content:center;margin-top:46px;flex-wrap:wrap}
 .hero-trust div{display:flex;flex-direction:column}
 .hero-trust strong{font-family:'Sora';font-size:22px;color:var(--teal)}
@@ -61,6 +64,19 @@ a{text-decoration:none;color:inherit}
 .card h3{font-size:18px;color:var(--navy);margin-bottom:8px}
 .card p{color:var(--mut);font-size:14.5px}
 
+/* PARA QUIÉN ES (Mejora 8) */
+.para-quien{background:var(--soft)}
+.pq-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.pq-col{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px}
+.pq-col h3{font-family:'Sora',sans-serif;font-size:18px;margin-bottom:18px}
+.pq-yes h3{color:var(--teal)}
+.pq-no h3{color:#c0392b}
+.pq-col ul{list-style:none}
+.pq-col li{padding:9px 0 9px 28px;position:relative;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
+.pq-col li:last-child{border-bottom:none}
+.pq-yes li:before{content:"✓";position:absolute;left:0;color:var(--sea);font-weight:700}
+.pq-no li:before{content:"✕";position:absolute;left:0;color:#c0392b;font-weight:700}
+
 /* PLANES */
 .planes{background:var(--soft)}
 .plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;display:flex;flex-direction:column;position:relative}
@@ -70,24 +86,83 @@ a{text-decoration:none;color:inherit}
 .price{font-family:'Sora';font-size:34px;font-weight:700;color:var(--navy);margin:10px 0 2px}
 .price span{font-size:15px;font-weight:500;color:var(--mut)}
 .plan-for{color:var(--mut);font-size:14px;margin-bottom:18px}
-.plan ul{list-style:none;margin-bottom:24px;flex:1}
+.plan ul{list-style:none;margin-bottom:18px;flex:1}
 .plan li{padding:8px 0 8px 26px;position:relative;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
 .plan li:before{content:"✓";position:absolute;left:0;color:var(--sea);font-weight:700}
 .guarantee{text-align:center;margin-top:34px;color:var(--navy);font-weight:500;background:rgba(0,168,150,.1);display:inline-block;width:100%;padding:16px;border-radius:10px}
+/* Mejora 6: contexto ROI Turismo Médico */
+.plan-roi-note{background:rgba(2,128,144,.07);border-left:3px solid var(--teal);border-radius:8px;padding:12px 14px;font-size:13.5px;color:var(--navy);margin-bottom:18px;line-height:1.5}
 
-/* PROCESO */
+/* PROCESO (Mejora 7) */
 .step{text-align:center;padding:10px}
-.step .num{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Sora';font-size:22px;font-weight:700;margin-bottom:16px}
+.step .num{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Sora';font-size:22px;font-weight:700;margin-bottom:10px}
+.step-time{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--sea);margin-bottom:8px}
 .step h3{font-size:18px;color:var(--navy);margin-bottom:8px}
 .step p{color:var(--mut);font-size:14.5px;max-width:300px;margin:0 auto}
 
-/* CTA */
-.cta-final{background:linear-gradient(135deg,var(--teal),var(--navy));color:#fff;text-align:center}
-.cta-box h2{color:#fff}
-.cta-box p{color:#d6eef0;margin:14px auto 0;max-width:560px;font-size:17px}
-.cta-box .btn{margin-top:30px}
-.cta-mail{font-size:14px;margin-top:18px!important}
-.cta-mail a{color:#fff;text-decoration:underline}
+/* GARANTÍA EN DESTAQUE (Mejora 4) */
+.garantia-section{background:linear-gradient(135deg,rgba(0,168,150,.10) 0%,rgba(2,128,144,.15) 100%);padding:64px 0}
+.garantia-box{display:flex;align-items:center;gap:30px;background:#fff;border:2px solid var(--sea);border-radius:var(--radius);padding:40px 48px;max-width:780px;margin:0 auto;box-shadow:0 8px 32px rgba(0,168,150,.10)}
+.garantia-icon{font-size:52px;flex-shrink:0}
+.garantia-content h2{text-align:left;font-size:clamp(22px,2.6vw,28px);color:var(--navy);margin-bottom:10px}
+.garantia-content p{color:var(--mut);font-size:16px;line-height:1.6;text-align:left}
+
+/* PRUEBA SOCIAL / TESTIMONIOS (Mejora 1) */
+.testimonios{background:#fff}
+.metrics-strip{display:flex;gap:0;margin:40px 0 0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.metric-item{flex:1;text-align:center;padding:22px 16px;border-right:1px solid var(--line)}
+.metric-item:last-child{border-right:none}
+.metric-item strong{display:block;font-family:'Sora',sans-serif;font-size:28px;color:var(--teal);font-weight:700}
+.metric-item span{font-size:13px;color:var(--mut)}
+.testimonios-grid{margin-top:36px}
+.tcard{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;position:relative;display:flex;flex-direction:column}
+.ejemplo-tag{position:absolute;top:12px;right:12px;background:rgba(95,116,128,.12);color:var(--mut);font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;letter-spacing:.4px;text-transform:uppercase}
+.tcard-body{padding:26px 22px 22px;display:flex;flex-direction:column;flex:1}
+.tcard-quote{font-size:15px;color:var(--ink);line-height:1.6;font-style:italic;flex:1;margin-bottom:20px}
+.tcard-author{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.tcard-avatar{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;font-family:'Sora',sans-serif;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tcard-author strong{display:block;font-size:14.5px;color:var(--navy)}
+.tcard-author span{display:block;font-size:12.5px;color:var(--mut)}
+.tcard-result{font-size:12.5px;font-weight:600;color:var(--teal);background:rgba(0,168,150,.08);border-radius:8px;padding:8px 12px}
+
+/* CTA INTERMEDIO (Mejora 10) */
+.section-cta{text-align:center;margin-top:44px}
+
+/* FAQ (Mejora 3) */
+.faq-section{background:var(--soft)}
+.faq-list{margin-top:44px;max-width:780px;margin-left:auto;margin-right:auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;font-family:'Sora',sans-serif;font-size:16px;font-weight:600;color:var(--navy);padding:20px 40px 20px 0;position:relative;transition:.15s}
+.faq-q:hover{color:var(--teal)}
+.faq-q::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:22px;color:var(--teal);font-weight:300;line-height:1;transition:.2s}
+.faq-q[aria-expanded="true"]::after{content:"−"}
+.faq-a{padding:0 40px 20px 0}
+.faq-a p{color:var(--mut);font-size:15px;line-height:1.7}
+
+/* FORMULÁRIO DE LEAD + MICROCOPY (Mejoras 2 e 9) */
+.lead-form-section{background:linear-gradient(135deg,var(--teal),var(--navy));padding:84px 0}
+.lead-form-box{background:#fff;border-radius:var(--radius);padding:52px 56px;max-width:620px;margin:0 auto}
+.lead-form-box h2{text-align:center;color:var(--navy);margin-bottom:6px}
+.lead-form-box .section-sub{margin-bottom:32px}
+.lead-form{display:flex;flex-direction:column;gap:18px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:14px;font-weight:600;color:var(--navy)}
+.form-group input,
+.form-group select{border:1.5px solid var(--line);border-radius:10px;padding:13px 16px;font-family:'Inter',sans-serif;font-size:15px;color:var(--ink);background:#fff;transition:.15s;-webkit-appearance:none;appearance:none}
+.form-group input::placeholder{color:#aab6bb}
+.form-group input:focus,
+.form-group select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(2,128,144,.10)}
+.form-group input.input-error,
+.form-group select.input-error{border-color:#c0392b}
+.field-error{font-size:12.5px;color:#c0392b;min-height:16px}
+.lead-form .btn{margin-top:6px}
+.wa-alt{text-align:center;margin-top:18px;font-size:14px;color:var(--mut)}
+.wa-alt a{color:var(--teal);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.wa-alt a:hover{color:var(--navy)}
+/* Mejora 9: microcopy */
+.microcopy-seg{text-align:center;margin-top:22px;font-size:13px;color:var(--mut);line-height:1.5}
+.microcopy-pd{text-align:center;margin-top:8px;font-size:13px;color:var(--mut);font-style:italic}
 
 /* FOOTER */
 .footer{background:var(--navy);color:#9fb6bf;padding:40px 0}
@@ -100,10 +175,19 @@ a{text-decoration:none;color:inherit}
   .grid-4{grid-template-columns:repeat(2,1fr)}
   .grid-3{grid-template-columns:1fr}
   .nav-links{display:none}
+  .pq-grid{grid-template-columns:1fr}
+  .garantia-box{flex-direction:column;text-align:center;padding:32px 28px}
+  .garantia-content h2,.garantia-content p{text-align:center}
+  .metrics-strip{flex-direction:column}
+  .metric-item{border-right:none;border-bottom:1px solid var(--line)}
+  .metric-item:last-child{border-bottom:none}
+  .lead-form-box{padding:36px 28px}
 }
 @media(max-width:560px){
   section{padding:60px 0}
   .grid-4{grid-template-columns:1fr}
   .hero-trust{gap:26px}
   .btn-block{width:100%}
+  .garantia-box{padding:26px 20px}
+  .lead-form-box{padding:28px 18px}
 }

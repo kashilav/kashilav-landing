@@ -19,6 +19,7 @@
       <a href="#diferenciales" data-i18n="nav_dif">Diferenciales</a>
       <a href="#planes" data-i18n="nav_planes">Planes</a>
       <a href="#proceso" data-i18n="nav_proceso">Cómo funciona</a>
+      <a href="#faq" data-i18n="nav_faq">FAQ</a>
     </nav>
     <div class="nav-actions">
       <button id="langToggle" class="lang" aria-label="Cambiar idioma">EN</button>
@@ -27,16 +28,21 @@
   </div>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container hero-inner">
     <span class="badge" data-i18n="hero_badge">Especialistas en clínicas estéticas · Bogotá</span>
     <h1 data-i18n="hero_title">Más pacientes para tu clínica — locales y del exterior.</h1>
     <p class="hero-sub" data-i18n="hero_sub">La primera agencia de marketing enfocada exclusivamente en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de retorno por procedimiento — no por "me gusta".</p>
+
+    <!-- Mejora 5: CTA primario único + secundario como texto -->
     <div class="hero-cta">
       <a href="#contacto" class="btn btn-primary" data-i18n="hero_cta1">Agenda tu diagnóstico gratis</a>
-      <a href="#planes" class="btn btn-ghost" data-i18n="hero_cta2">Ver planes y precios</a>
     </div>
+    <a href="#planes" class="hero-cta-secondary" data-i18n="hero_cta2">Ver planes y precios</a>
+
     <div class="hero-trust">
+      <!-- PLACEHOLDER: substituir pelos números reais quando disponíveis -->
       <div><strong>ES + EN</strong><span data-i18n="hero_t1">Campañas bilingües</span></div>
       <div><strong>ROI</strong><span data-i18n="hero_t2">por procedimiento</span></div>
       <div><strong>100%</strong><span data-i18n="hero_t3">Precios públicos</span></div>
@@ -44,6 +50,7 @@
   </div>
 </section>
 
+<!-- ===== PROBLEMA ===== -->
 <section class="problem">
   <div class="container">
     <h2 data-i18n="prob_title">¿Tu clínica es excelente, pero la agenda no se llena?</h2>
@@ -51,6 +58,7 @@
   </div>
 </section>
 
+<!-- ===== DIFERENCIALES ===== -->
 <section id="diferenciales" class="dif">
   <div class="container">
     <h2 data-i18n="dif_title">Lo que nos hace diferentes</h2>
@@ -79,6 +87,122 @@
   </div>
 </section>
 
+<!-- ===== PARA QUIÉN ES / PARA QUIÉN NO ES (Mejora 8) ===== -->
+<section class="para-quien">
+  <div class="container">
+    <h2 data-i18n="pq_title">¿Es para tu clínica?</h2>
+    <div class="pq-grid">
+      <div class="pq-col pq-yes">
+        <h3 data-i18n="pq_yes_t">Es para ti si...</h3>
+        <ul>
+          <li data-i18n="pq_yes_1">Tu clínica ya está activa en Bogotá y tiene procedimientos consolidados</li>
+          <li data-i18n="pq_yes_2">Quieres crecer más allá del boca a boca y llenar la agenda con anuncios</li>
+          <li data-i18n="pq_yes_3">Tienes presupuesto mínimo de pauta (~US$500/mes en anuncios, aparte de la agencia)</li>
+          <li data-i18n="pq_yes_4">Quieres atraer pacientes internacionales de alto ticket</li>
+          <li data-i18n="pq_yes_5">Valoras reportes claros con ROI por procedimiento, no vanity metrics</li>
+        </ul>
+      </div>
+      <div class="pq-col pq-no">
+        <h3 data-i18n="pq_no_t">No es para ti si...</h3>
+        <ul>
+          <li data-i18n="pq_no_1">Acabas de abrir y aún no tienes procedimientos definidos ni equipo médico</li>
+          <li data-i18n="pq_no_2">No tienes presupuesto para pauta publicitaria (los anuncios son la base del resultado)</li>
+          <li data-i18n="pq_no_3">Buscas una agencia genérica que haga de todo para todos los sectores</li>
+          <li data-i18n="pq_no_4">Esperas resultados sin inversión sostenida mínima de 60 días</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRUEBA SOCIAL (Mejora 1) ===== -->
+<section class="testimonios">
+  <div class="container">
+    <h2 data-i18n="test_title">Lo que dicen los médicos que ya trabajan con nosotros</h2>
+
+    <!-- Faixa de métricas agregadas — PLACEHOLDER -->
+    <!-- PLACEHOLDER: substituir pelos números reais quando disponíveis -->
+    <div class="metrics-strip">
+      <div class="metric-item">
+        <strong data-i18n="met1_n">+40</strong>
+        <span data-i18n="met1_l">leads calificados / mes (promedio)</span>
+      </div>
+      <div class="metric-item">
+        <strong data-i18n="met2_n">3.2x</strong>
+        <span data-i18n="met2_l">ROI promedio en los primeros 60 días</span>
+      </div>
+      <div class="metric-item">
+        <strong data-i18n="met3_n">100%</strong>
+        <span data-i18n="met3_l">cuentas de anuncios en manos del cliente</span>
+      </div>
+    </div>
+
+    <div class="grid grid-3 testimonios-grid">
+
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+      <div class="tcard">
+        <span class="ejemplo-tag" data-i18n="ejemplo_tag">ejemplo</span>
+        <div class="tcard-body">
+          <p class="tcard-quote" data-i18n="test1_q">"En el primer mes ya teníamos 38 leads de rinoplastia. Nunca habíamos tenido tanta agenda llena con pacientes que ya iban decididos."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">DR</div>
+            <div>
+              <!-- PLACEHOLDER: substituir nome, clínica e cidade reais -->
+              <strong data-i18n="test1_n">Dr. Rodríguez</strong>
+              <span data-i18n="test1_c">Clínica Estética · Bogotá</span>
+            </div>
+          </div>
+          <div class="tcard-result" data-i18n="test1_r">38 leads en el primer mes · ROI 3.8x</div>
+        </div>
+      </div>
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+      <div class="tcard">
+        <span class="ejemplo-tag" data-i18n="ejemplo_tag">ejemplo</span>
+        <div class="tcard-body">
+          <p class="tcard-quote" data-i18n="test2_q">"Trabajamos con otra agencia antes y solo nos traían 'me gusta'. Con KASHILAV el reporte me muestra exactamente cuánto generó cada anuncio por procedimiento."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">DM</div>
+            <div>
+              <!-- PLACEHOLDER: substituir nome, clínica e cidade reais -->
+              <strong data-i18n="test2_n">Dra. Martínez</strong>
+              <span data-i18n="test2_c">Centro Médico Estético · Bogotá</span>
+            </div>
+          </div>
+          <div class="tcard-result" data-i18n="test2_r">De 0 a 25 pacientes internacionales en 90 días</div>
+        </div>
+      </div>
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+      <div class="tcard">
+        <span class="ejemplo-tag" data-i18n="ejemplo_tag">ejemplo</span>
+        <div class="tcard-body">
+          <p class="tcard-quote" data-i18n="test3_q">"Lo mejor es que las cuentas de anuncios son mías. Si mañana decido cambiar de agencia, no pierdo nada. Eso genera confianza desde el día uno."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">CV</div>
+            <div>
+              <!-- PLACEHOLDER: substituir nome, clínica e cidade reais -->
+              <strong data-i18n="test3_n">Dr. Vargas</strong>
+              <span data-i18n="test3_c">Clínica de Cirugía Plástica · Bogotá</span>
+            </div>
+          </div>
+          <div class="tcard-result" data-i18n="test3_r">+60% de ocupación en cirugías corporales</div>
+        </div>
+      </div>
+      <!-- PLACEHOLDER: substituir por depoimento real quando disponível -->
+
+    </div>
+
+    <!-- Mejora 10: CTA intermedio após prova social -->
+    <div class="section-cta">
+      <a href="#contacto" class="btn btn-primary" data-i18n="test_cta">Quiero resultados como estos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLANES ===== -->
 <section id="planes" class="planes">
   <div class="container">
     <h2 data-i18n="plan_title">Planes y precios</h2>
@@ -121,6 +245,8 @@
           <li data-i18n="p3_4">Landing pages bilingües por procedimiento</li>
           <li data-i18n="p3_5">Coordinación de paciente internacional</li>
         </ul>
+        <!-- Mejora 6: contexto de ROI en Turismo Médico -->
+        <div class="plan-roi-note" data-i18n="p3_roi">Un paciente internacional de rinoplastia representa US$3.000–8.000 para tu clínica. Con un solo paciente al mes, el plan se paga solo.</div>
         <a href="#contacto" class="btn btn-ghost btn-block" data-i18n="p_cta">Quiero este plan</a>
       </div>
     </div>
@@ -128,23 +254,149 @@
   </div>
 </section>
 
+<!-- ===== PROCESO (Mejora 7 — enriquecido con prazos e detalhes) ===== -->
 <section id="proceso" class="proceso">
   <div class="container">
     <h2 data-i18n="proc_title">Cómo funciona</h2>
     <div class="grid grid-3">
-      <div class="step"><span class="num">1</span><h3 data-i18n="s1_t">Diagnóstico gratis</h3><p data-i18n="s1_p">Analizamos en vivo tu presencia digital y te mostramos qué está dejando pacientes sobre la mesa.</p></div>
-      <div class="step"><span class="num">2</span><h3 data-i18n="s2_t">Estrategia y campañas</h3><p data-i18n="s2_p">Montamos las campañas locales e internacionales y la automatización de tus leads.</p></div>
-      <div class="step"><span class="num">3</span><h3 data-i18n="s3_t">Pacientes y reporte</h3><p data-i18n="s3_p">Recibes pacientes calificados y un reporte claro de retorno por procedimiento.</p></div>
+      <div class="step">
+        <span class="num">1</span>
+        <div class="step-time" data-i18n="s1_time">Semana 1</div>
+        <h3 data-i18n="s1_t">Diagnóstico gratis</h3>
+        <p data-i18n="s1_p">Analizamos en vivo tu presencia digital, tus competidores y tus procedimientos estrella. Te mostramos exactamente qué está dejando pacientes sobre la mesa — en menos de 48 horas.</p>
+      </div>
+      <div class="step">
+        <span class="num">2</span>
+        <div class="step-time" data-i18n="s2_time">Semanas 2–4</div>
+        <h3 data-i18n="s2_t">Estrategia y campañas</h3>
+        <p data-i18n="s2_p">Montamos las campañas locales e internacionales en tus propias cuentas de anuncios (Meta + Google). Configuramos la automatización de WhatsApp y el dashboard de ROI. Reunión quincenal de resultados incluida.</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <div class="step-time" data-i18n="s3_time">Mes 2 en adelante</div>
+        <h3 data-i18n="s3_t">Pacientes y reporte</h3>
+        <p data-i18n="s3_p">Recibes pacientes calificados de forma constante y un reporte claro de retorno por procedimiento — no por "me gusta". Tú ves cada peso invertido y lo que generó.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="contacto" class="cta-final">
-  <div class="container cta-box">
-    <h2 data-i18n="cta_title">Agenda tu diagnóstico gratis</h2>
-    <p data-i18n="cta_sub">20 minutos. Sin compromiso. Te mostramos exactamente qué mejorar — vengas o no con nosotros.</p>
-    <a id="waBtn" href="https://wa.me/000000000000?text=Hola%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis%20para%20mi%20cl%C3%ADnica" class="btn btn-primary btn-lg" data-i18n="cta_btn">Hablar por WhatsApp</a>
-    <p class="cta-mail">o escríbenos a <a href="mailto:contacto@kashilav.com">contacto@kashilav.com</a></p>
+<!-- ===== GARANTÍA EN DESTAQUE (Mejora 4) ===== -->
+<section class="garantia-section">
+  <div class="container">
+    <div class="garantia-box">
+      <div class="garantia-icon">🛡️</div>
+      <div class="garantia-content">
+        <h2 data-i18n="gar_title">Garantía de resultado real</h2>
+        <p data-i18n="gar_text">Si en 60 días no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes. Sin letras pequeñas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ (Mejora 3) ===== -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 data-i18n="faq_title">Preguntas frecuentes</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq1_q">¿Qué pasa si ya trabajé con otra agencia y no funcionó?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq1_a">Es la situación más común que vemos. La mayoría de las agencias genéricas optimizan por "me gusta" o alcance, no por pacientes reales. Nuestra primera sesión — el diagnóstico gratuito — analiza exactamente qué falló antes y por qué. Solo arrancamos si tenemos claridad de que podemos hacerlo mejor. Y si en 60 días no lo demostramos con números, no pagas el segundo mes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq2_q">¿En cuánto tiempo veo resultados?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq2_a">Los primeros leads calificados suelen aparecer entre la semana 2 y la semana 4, dependiendo del presupuesto de pauta y el procedimiento. Resultados consistentes y escalables se consolidan entre el mes 2 y el mes 3. Por eso nuestra garantía es de 60 días: es el tiempo mínimo honesto para juzgar una campaña.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq3_q">¿Cómo sé que el ROI será positivo antes de pagar?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq3_a">No puedes saberlo con certeza antes de arrancar — nadie que sea honesto te lo prometería. Lo que sí hacemos: en el diagnóstico gratuito estimamos el costo por lead esperado para tu procedimiento en Bogotá, basado en referencias del mercado. Si los números no cierran, te lo decimos antes de que pagues un peso. Y si arrancamos y en 60 días no alcanzamos 2x el valor del plan en leads calificados, el segundo mes no se cobra.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq4_q">¿Entienden los procedimientos estéticos o son una agencia genérica?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq4_a">Solo trabajamos con clínicas estéticas. Conocemos la diferencia entre rinoplastia abierta y cerrada, entre toxina botulínica y fillers, y cómo cada procedimiento tiene un ciclo de decisión diferente en el paciente. Eso cambia el copy del anuncio, el tipo de segmentación y la página de destino. Una agencia genérica no puede hacer eso bien.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq5_q">¿Tienen experiencia con turismo médico y pacientes internacionales?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq5_a">Sí. Nuestras campañas bilingües (ES/EN) están diseñadas específicamente para atraer pacientes de EE.UU., Canadá y Venezuela que buscan procedimientos en Bogotá a precio competitivo. Manejamos la coordinación de contenido y las landing pages en inglés, y entendemos las diferencias culturales en el proceso de decisión de un paciente internacional.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" data-i18n="faq6_q">¿Hay permanencia mínima? ¿De quién son las cuentas de anuncios?</button>
+        <div class="faq-a" hidden>
+          <p data-i18n="faq6_a">No hay permanencia mínima. Trabajamos mes a mes porque creemos que el cliente debe quedarse por resultados, no por contrato. Las cuentas de Meta Ads y Google Ads son siempre tuyas — las creamos a tu nombre o trabajamos en las que ya tienes. Si decides salir mañana, te llevas todo el histórico, los públicos y los datos acumulados.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mejora 10: CTA intermedio após FAQ -->
+    <div class="section-cta">
+      <a href="#contacto" class="btn btn-primary" data-i18n="faq_cta">Agenda tu diagnóstico gratis</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORMULÁRIO DE LEAD (Mejora 2) + MICROCOPY (Mejora 9) ===== -->
+<section id="contacto" class="lead-form-section">
+  <div class="container">
+    <div class="lead-form-box">
+      <h2 data-i18n="form_title">Quiero mi diagnóstico gratis</h2>
+      <p class="section-sub" data-i18n="form_sub">20 minutos. Sin compromiso. Te mostramos exactamente qué mejorar — vengas o no con nosotros.</p>
+
+      <form id="leadForm" class="lead-form" novalidate>
+        <div class="form-group">
+          <label for="fNombre" data-i18n="form_nombre_l">Tu nombre</label>
+          <input type="text" id="fNombre" name="nombre" placeholder="Dr. / Dra. ..." autocomplete="name">
+          <span class="field-error" id="err-nombre"></span>
+        </div>
+        <div class="form-group">
+          <label for="fWa" data-i18n="form_wa_l">WhatsApp (con código de país)</label>
+          <input type="tel" id="fWa" name="whatsapp" placeholder="+57 300 000 0000" autocomplete="tel">
+          <span class="field-error" id="err-wa"></span>
+        </div>
+        <div class="form-group">
+          <label for="fProc" data-i18n="form_proc_l">Procedimiento principal de tu clínica</label>
+          <select id="fProc" name="procedimiento">
+            <option value="" data-i18n="form_proc_ph">Selecciona un procedimiento...</option>
+            <option value="Rinoplastia" data-i18n="proc_rino">Rinoplastia</option>
+            <option value="Toxina botulínica / Botox" data-i18n="proc_botu">Toxina botulínica / Botox</option>
+            <option value="Rellenos / Fillers" data-i18n="proc_fill">Rellenos / Fillers</option>
+            <option value="Liposucción / Corporal" data-i18n="proc_lipo">Liposucción / Corporal</option>
+            <option value="Implantes" data-i18n="proc_impl">Implantes</option>
+            <option value="Tratamientos faciales / Láser" data-i18n="proc_face">Tratamientos faciales / Láser</option>
+            <option value="Odontología estética" data-i18n="proc_odont">Odontología estética</option>
+            <option value="Otro" data-i18n="proc_otro">Otro</option>
+          </select>
+          <span class="field-error" id="err-proc"></span>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg" data-i18n="form_btn">Quiero mi diagnóstico gratis</button>
+      </form>
+
+      <p class="wa-alt">
+        <span data-i18n="form_wa_alt">¿Prefieres hablar ahora?</span>
+        <!-- PLACEHOLDER: substituir 000000000000 pelo número de WhatsApp real da KASHILAV -->
+        <a id="waDirectBtn" href="https://wa.me/000000000000?text=Hola%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis%20para%20mi%20cl%C3%ADnica" target="_blank" rel="noopener" data-i18n="form_wa_link">Escríbenos por WhatsApp</a>
+      </p>
+
+      <!-- Mejora 9: microcopy de seguridad -->
+      <p class="microcopy-seg" data-i18n="form_micro">Sin permanencia mínima · Sin porcentaje sobre tu pauta · Tus cuentas de anuncios son siempre tuyas.</p>
+      <p class="microcopy-pd" data-i18n="form_pd">P.D. El diagnóstico es gratuito y lo preparamos en menos de 48 horas.</p>
+    </div>
   </div>
 </section>
 
@@ -152,6 +404,8 @@
   <div class="container footer-inner">
     <span class="logo">KASHILAV<span>.</span></span>
     <p data-i18n="foot">Marketing especializado para clínicas estéticas y turismo médico · Bogotá, Colombia</p>
+    <!-- PLACEHOLDER: adicionar selos Meta Business Partner e Google Partner quando obtidos -->
+    <!-- PLACEHOLDER: adicionar links para Política de Privacidad e Términos de Servicio -->
   </div>
 </footer>
 
