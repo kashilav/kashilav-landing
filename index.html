@@ -16,7 +16,6 @@
 <header class="nav">
   <div class="container nav-inner">
     <a href="#" class="logo">
-      <!-- Logo mark SVG — monograma K geométrico -->
       <svg class="logo-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect width="28" height="28" rx="7" fill="url(#logoGrad)"/>
         <path d="M8 7v14M8 14l8-7M8 14l8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -44,31 +43,143 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero">
-  <!-- Brilho radial teal — detalhe premium de fundo -->
   <div class="hero-glow" aria-hidden="true"></div>
-  <!-- Orbes flutuantes de profundidade -->
   <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
   <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
-  <!-- Grade sutil de fundo -->
   <div class="hero-grid" aria-hidden="true"></div>
 
   <div class="container hero-inner">
-    <span class="badge reveal-fade" data-i18n="hero_badge">Especialistas en clínicas estéticas · Bogotá</span>
-    <h1 class="reveal-fade" data-delay="100" data-i18n="hero_title">Más pacientes para tu clínica — locales y del exterior.</h1>
-    <p class="hero-sub reveal-fade" data-delay="200" data-i18n="hero_sub">La primera agencia de marketing enfocada exclusivamente en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de retorno por procedimiento — no por "me gusta".</p>
+    <div class="hero-text-col">
+      <span class="badge reveal-fade" data-i18n="hero_badge">Especialistas en clínicas estéticas · Bogotá</span>
+      <h1 class="reveal-fade" data-delay="100" data-i18n="hero_title">Más pacientes para tu clínica — locales y del exterior.</h1>
+      <p class="hero-sub reveal-fade" data-delay="200" data-i18n="hero_sub">La primera agencia de marketing enfocada exclusivamente en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de retorno por procedimiento — no por "me gusta".</p>
 
-    <div class="hero-cta reveal-fade" data-delay="300">
-      <a href="#contacto" class="btn btn-primary" data-i18n="hero_cta1">Agenda tu diagnóstico gratis</a>
-    </div>
-    <a href="#planes" class="hero-cta-secondary reveal-fade" data-delay="380" data-i18n="hero_cta2">Ver planes y precios</a>
+      <div class="hero-cta reveal-fade" data-delay="300">
+        <a href="#contacto" class="btn btn-primary" data-i18n="hero_cta1">Agenda tu diagnóstico gratis</a>
+      </div>
+      <a href="#planes" class="hero-cta-secondary reveal-fade" data-delay="380" data-i18n="hero_cta2">Ver planes y precios</a>
 
-    <div class="hero-trust reveal-fade" data-delay="460">
-      <!-- PLACEHOLDER: substituir pelos números reais quando disponíveis -->
-      <div><strong>ES + EN</strong><span data-i18n="hero_t1">Campañas bilingües</span></div>
-      <div><strong>ROI</strong><span data-i18n="hero_t2">por procedimiento</span></div>
-      <div><strong>100%</strong><span data-i18n="hero_t3">Precios públicos</span></div>
+      <div class="hero-trust reveal-fade" data-delay="460">
+        <div><strong>ES + EN</strong><span data-i18n="hero_t1">Campañas bilingües</span></div>
+        <div><strong>ROI</strong><span data-i18n="hero_t2">por procedimiento</span></div>
+        <div><strong>100%</strong><span data-i18n="hero_t3">Precios públicos</span></div>
+      </div>
     </div>
+
+    <!-- Dashboard Mockup — visual de produto Apple-style -->
+    <div class="hero-dashboard-wrap reveal-fade" data-delay="180" aria-hidden="true">
+      <div class="dashboard" id="heroDashboard">
+        <!-- Barra superior do app -->
+        <div class="db-topbar">
+          <div class="db-topbar-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="db-topbar-title">ROI Dashboard · KASHILAV</span>
+          <span class="db-topbar-live"><span class="db-live-dot"></span>Live</span>
+        </div>
+
+        <!-- Cards de métricas -->
+        <div class="db-metrics">
+          <div class="db-metric-card db-metric-primary">
+            <div class="db-metric-label">Pacientes nuevos</div>
+            <div class="db-metric-value">38</div>
+            <div class="db-metric-delta db-delta-up">+42% vs mes ant.</div>
+          </div>
+          <div class="db-metric-card">
+            <div class="db-metric-label">Costo por paciente</div>
+            <div class="db-metric-value">US$47</div>
+            <div class="db-metric-delta db-delta-down">−18% eficiencia</div>
+          </div>
+          <div class="db-metric-card">
+            <div class="db-metric-label">ROI total</div>
+            <div class="db-metric-value db-roi-val">3.8x</div>
+            <div class="db-metric-delta db-delta-up">+0.6x vs meta</div>
+          </div>
+        </div>
+
+        <!-- Mini gráfico de barras -->
+        <div class="db-chart-wrap">
+          <div class="db-chart-header">
+            <span class="db-chart-title">Leads por semana</span>
+            <span class="db-chart-period">últimas 8 sem.</span>
+          </div>
+          <div class="db-chart">
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:38%"></div><span>S1</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:55%"></div><span>S2</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:47%"></div><span>S3</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:72%"></div><span>S4</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:65%"></div><span>S5</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:80%"></div><span>S6</span>
+            </div>
+            <div class="db-bar-group">
+              <div class="db-bar" style="--h:88%"></div><span>S7</span>
+            </div>
+            <div class="db-bar-group db-bar-active">
+              <div class="db-bar" style="--h:100%"></div><span>S8</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabela de procedimentos -->
+        <div class="db-table-wrap">
+          <div class="db-table-header">
+            <span class="db-chart-title">Por procedimiento</span>
+          </div>
+          <table class="db-table">
+            <thead>
+              <tr>
+                <th>Procedimiento</th>
+                <th>Leads</th>
+                <th>Pacientes</th>
+                <th>ROI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="db-proc-dot" style="background:#2FD4C4"></span>Rinoplastia</td>
+                <td>24</td>
+                <td>11</td>
+                <td><span class="db-roi-chip db-roi-high">4.2x</span></td>
+              </tr>
+              <tr>
+                <td><span class="db-proc-dot" style="background:#D9B871"></span>Botox</td>
+                <td>58</td>
+                <td>21</td>
+                <td><span class="db-roi-chip db-roi-med">3.1x</span></td>
+              </tr>
+              <tr>
+                <td><span class="db-proc-dot" style="background:#7C9FFF"></span>Liposucción</td>
+                <td>15</td>
+                <td>6</td>
+                <td><span class="db-roi-chip db-roi-high">5.7x</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /dashboard -->
+  </div>
+</section>
+
+<!-- ===== STATEMENT 1 — entre hero e problema ===== -->
+<section class="statement-section" aria-label="Statement">
+  <div class="container">
+    <p class="statement-text reveal-statement" data-i18n="stmt1">
+      Pacientes reales.<br><em>No "me gusta".</em>
+    </p>
   </div>
 </section>
 
@@ -89,7 +200,6 @@
     <div class="grid grid-4">
       <div class="card reveal-fade" data-delay="0">
         <div class="ic">
-          <!-- Ícone: estrela / especialização -->
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M11 2l2.39 4.84 5.34.78-3.87 3.77.91 5.32L11 14.27l-4.77 2.44.91-5.32L3.27 7.62l5.34-.78L11 2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
           </svg>
@@ -99,7 +209,6 @@
       </div>
       <div class="card reveal-fade" data-delay="80">
         <div class="ic">
-          <!-- Ícone: globo / idiomas -->
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.7"/>
             <path d="M11 2c0 0-4 3.5-4 9s4 9 4 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
@@ -112,7 +221,6 @@
       </div>
       <div class="card reveal-fade" data-delay="160">
         <div class="ic">
-          <!-- Ícone: gráfico / ROI -->
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <polyline points="3,17 8,11 13,13 19,5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
             <polyline points="14,5 19,5 19,10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -124,7 +232,6 @@
       </div>
       <div class="card reveal-fade" data-delay="240">
         <div class="ic">
-          <!-- Ícone: diamante / transparência -->
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M11 2l8 6-8 12L3 8l8-6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
             <path d="M3 8h16M7 8l4 12 4-12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
@@ -166,13 +273,21 @@
   </div>
 </section>
 
+<!-- ===== STATEMENT 2 — entre para-quien e testimonios ===== -->
+<section class="statement-section statement-section-alt" aria-label="Statement">
+  <div class="container">
+    <p class="statement-text reveal-statement" data-i18n="stmt2">
+      Tu clínica, llena.<br><em>Local y del mundo.</em>
+    </p>
+  </div>
+</section>
+
 <!-- ===== PRUEBA SOCIAL ===== -->
 <section class="testimonios">
   <div class="container">
     <span class="eyebrow reveal-fade" data-i18n="eyebrow_test">Resultados</span>
     <h2 class="reveal-fade" data-delay="60" data-i18n="test_title">Lo que dicen los médicos que ya trabajan con nosotros</h2>
 
-    <!-- Faixa de métricas — com contadores animados -->
     <div class="metrics-strip reveal-fade" data-delay="120">
       <div class="metric-item">
         <strong data-i18n="met1_n" data-counter="+40" data-counter-prefix="+" data-counter-val="40">+40</strong>
@@ -328,7 +443,6 @@
   <div class="container">
     <div class="garantia-box reveal-fade">
       <div class="garantia-icon" aria-hidden="true">
-        <!-- Ícone escudo SVG -->
         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M26 4L8 12v14c0 12 8 22 18 26 10-4 18-14 18-26V12L26 4z" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-linejoin="round" fill="rgba(47,212,196,0.08)"/>
           <path d="M19 26l5 5 9-9" stroke="url(#shieldGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -443,7 +557,6 @@
 
       <p class="wa-alt">
         <span data-i18n="form_wa_alt">¿Prefieres hablar ahora?</span>
-        <!-- PLACEHOLDER: substituir 000000000000 pelo número de WhatsApp real da KASHILAV -->
         <a id="waDirectBtn" href="https://wa.me/000000000000?text=Hola%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis%20para%20mi%20cl%C3%ADnica" target="_blank" rel="noopener" data-i18n="form_wa_link">Escríbenos por WhatsApp</a>
       </p>
 
@@ -456,7 +569,6 @@
 <footer class="footer">
   <div class="container footer-inner">
     <span class="logo">
-      <!-- Logo mark no footer -->
       <svg class="logo-mark" width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect width="28" height="28" rx="7" fill="url(#logoGradFt)"/>
         <path d="M8 7v14M8 14l8-7M8 14l8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -470,8 +582,6 @@
       KASHILAV<span>.</span>
     </span>
     <p data-i18n="foot">Marketing especializado para clínicas estéticas y turismo médico · Bogotá, Colombia</p>
-    <!-- PLACEHOLDER: adicionar selos Meta Business Partner e Google Partner quando obtidos -->
-    <!-- PLACEHOLDER: adicionar links para Política de Privacidad e Términos de Servicio -->
   </div>
 </footer>
 

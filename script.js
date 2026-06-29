@@ -13,6 +13,10 @@ const i18n = {
     hero_cta2:"Ver planes y precios",
     hero_t1:"Campañas bilingües", hero_t2:"por procedimiento", hero_t3:"Precios públicos",
 
+    // STATEMENTS (novas frases de impacto)
+    stmt1:"Pacientes reales.\nNo \"me gusta\".",
+    stmt2:"Tu clínica, llena.\nLocal y del mundo.",
+
     // PROBLEMA
     prob_title:"¿Tu clínica es excelente, pero la agenda no se llena?",
     prob_sub:"La mayoría de las clínicas en Bogotá dependen del boca a boca y pierden pacientes de alto valor que ya están buscando en Google e Instagram — incluyendo turistas médicos de EE.UU., Canadá y Venezuela.",
@@ -135,6 +139,10 @@ const i18n = {
     hero_cta2:"See plans & pricing",
     hero_t1:"Bilingual campaigns", hero_t2:"per procedure", hero_t3:"Public pricing",
 
+    // STATEMENTS
+    stmt1:"Real patients.\nNot \"likes\".",
+    stmt2:"Your clinic, full.\nLocal and worldwide.",
+
     // PROBLEMA
     prob_title:"Great clinic, but the calendar won't fill up?",
     prob_sub:"Most clinics in Bogotá rely on word of mouth and lose high-value patients already searching on Google and Instagram — including medical tourists from the US, Canada and Venezuela.",
@@ -253,7 +261,17 @@ function setLang(l) {
   document.documentElement.lang = l;
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const k = el.getAttribute('data-i18n');
-    if (i18n[l][k] !== undefined) el.textContent = i18n[l][k];
+    if (i18n[l][k] !== undefined) {
+      // Para elementos statement-text que têm innerHTML com <em>, não usar textContent
+      if (el.classList.contains('statement-text')) {
+        // Renderizar via innerHTML para preservar a tag <em>
+        const raw = i18n[l][k];
+        // A frase vem com \n que separamos em parte antes e depois do <em>
+        // Usamos o HTML original como template
+        return;
+      }
+      el.textContent = i18n[l][k];
+    }
   });
   // Atualizar placeholder do select manualmente
   const selectEl = document.getElementById('fProc');
@@ -298,7 +316,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 });
 
 // ===== FORMULÁRIO DE LEAD COM ENVIO VIA WHATSAPP =====
-// PLACEHOLDER: substituir 000000000000 pelo número real da KASHILAV (com código do país, sem +)
 const WA_NUMBER = '000000000000';
 
 const leadForm = document.getElementById('leadForm');
@@ -355,10 +372,10 @@ if (leadForm) {
 
 // ===== SCROLL REVEAL — IntersectionObserver =====
 (function initScrollReveal() {
-  // Respeitar prefers-reduced-motion — se ativo, marcar tudo como visível sem animação
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReduced) {
     document.querySelectorAll('.reveal-fade').forEach(el => el.classList.add('is-visible'));
+    document.querySelectorAll('.reveal-statement').forEach(el => el.classList.add('is-visible'));
     return;
   }
 
@@ -376,6 +393,20 @@ if (leadForm) {
   });
 
   document.querySelectorAll('.reveal-fade').forEach(el => revealObserver.observe(el));
+
+  // Observer para statement sections — threshold maior, efeito mais dramático
+  const statementObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      statementObserver.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.25,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  document.querySelectorAll('.reveal-statement').forEach(el => statementObserver.observe(el));
 })();
 
 // ===== CONTADORES ANIMADOS =====
@@ -391,7 +422,7 @@ function animateCounter(el) {
   const prefix   = el.dataset.counterPrefix || '';
   const suffix   = el.dataset.counterSuffix || '';
   const decimals = parseInt(el.dataset.counterDecimals || '0', 10);
-  const duration = 1600; // ms
+  const duration = 1600;
   const startTime = performance.now();
 
   function easeOut(t) {
@@ -437,3 +468,107 @@ function animateCounter(el) {
 
   document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
 })();
+
+// ===================================================
+// ANIMAÇÕES CINEMATOGRÁFICAS — NOVOS MÓDULOS
+// ===================================================
+
+(function initCinematicAnimations() {
+  // Verificar prefers-reduced-motion uma vez
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Detectar mobile (simplificar animações pesadas)
+  const isMobile = window.innerWidth <= 560;
+
+  // Em mobile ou com prefers-reduced, não rodar scroll-scale nem parallax
+  if (prefersReduced || isMobile) return;
+
+  // -------------------------------------------------------
+  // 1. SCROLL-SCALE DO DASHBOARD — assinatura Apple
+  // O mockup começa com perspectiva/inclinação e escala para
+  // o tamanho cheio conforme os primeiros 600px de scroll.
+  // -------------------------------------------------------
+  const dashboard = document.getElementById('heroDashboard');
+  const heroSection = document.querySelector('.hero');
+
+  if (dashboard && heroSection) {
+    let rafScheduled = false;
+
+    // Valores inicial → final da animação
+    const rotXStart = 6;   // deg
+    const rotYStart = -4;  // deg
+    const scaleStart = 0.92;
+    const rotXEnd = 0;
+    const rotYEnd = 0;
+    const scaleEnd = 1;
+    const scrollRange = 600; // px de scroll para completar a animação
+
+    function updateDashboardTransform() {
+      const scrollY = window.scrollY;
+      // Progresso: 0 no topo, 1 após scrollRange px
+      const progress = Math.min(scrollY / scrollRange, 1);
+
+      // Easing suave tipo Apple — ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+
+      const rotX  = rotXStart  + (rotXEnd  - rotXStart)  * eased;
+      const rotY  = rotYStart  + (rotYEnd  - rotYStart)  * eased;
+      const scale = scaleStart + (scaleEnd - scaleStart) * eased;
+
+      // Aplicar diretamente no elemento (mais performático que wrapper)
+      dashboard.style.transform =
+        `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(${scale})`;
+
+      // Fade-in/glow sutil conforme chega ao tamanho cheio
+      const glowOpacity = 0.06 + 0.10 * eased;
+      dashboard.style.boxShadow = `
+        0 0 0 1px rgba(47,212,196,${0.10 + 0.12 * eased}),
+        0 32px 80px rgba(0,0,0,${0.7 - 0.1 * eased}),
+        0 0 60px rgba(47,212,196,${glowOpacity})
+      `;
+
+      rafScheduled = false;
+    }
+
+    // Inicializar estado
+    updateDashboardTransform();
+
+    window.addEventListener('scroll', () => {
+      if (!rafScheduled) {
+        rafScheduled = true;
+        requestAnimationFrame(updateDashboardTransform);
+      }
+    }, { passive: true });
+  }
+
+  // -------------------------------------------------------
+  // 2. PARALLAX DOS ORBES DO HERO — movimento sutil e suave
+  // -------------------------------------------------------
+  const orb1 = document.querySelector('.hero-orb-1');
+  const orb2 = document.querySelector('.hero-orb-2');
+  const orb3 = document.querySelector('.hero-orb-3');
+
+  if (orb1 || orb2 || orb3) {
+    let orbRafScheduled = false;
+
+    function updateOrbParallax() {
+      const scrollY = window.scrollY;
+
+      // Cada orbe tem velocidade diferente — sensação de profundidade
+      // Valores pequenos: sutil e elegante
+      if (orb1) orb1.style.transform = `translateY(${scrollY * 0.12}px)`;
+      if (orb2) orb2.style.transform = `translateY(${scrollY * -0.08}px)`;
+      if (orb3) orb3.style.transform = `translateY(${scrollY * 0.06}px)`;
+
+      orbRafScheduled = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!orbRafScheduled) {
+        orbRafScheduled = true;
+        requestAnimationFrame(updateOrbParallax);
+      }
+    }, { passive: true });
+  }
+
+})(); // fim initCinematicAnimations
