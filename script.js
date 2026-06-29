@@ -17,6 +17,14 @@ const i18n = {
     prob_title:"¿Tu clínica es excelente, pero la agenda no se llena?",
     prob_sub:"La mayoría de las clínicas en Bogotá dependen del boca a boca y pierden pacientes de alto valor que ya están buscando en Google e Instagram — incluyendo turistas médicos de EE.UU., Canadá y Venezuela.",
 
+    // EYEBROW LABELS
+    eyebrow_dif:"Especialización",
+    eyebrow_pq:"Para quién",
+    eyebrow_test:"Resultados",
+    eyebrow_planes:"Planes",
+    eyebrow_proc:"Proceso",
+    eyebrow_faq:"Dudas",
+
     // DIFERENCIALES
     dif_title:"Lo que nos hace diferentes",
     dif1_t:"Solo clínicas estéticas", dif1_p:"Nos especializamos en tu sector. Hablamos el idioma de tus procedimientos y de tus pacientes.",
@@ -24,7 +32,7 @@ const i18n = {
     dif3_t:"ROI por procedimiento", dif3_p:"Te mostramos cuántos pacientes y cuánta facturación generó cada peso invertido — por procedimiento.",
     dif4_t:"Precios transparentes", dif4_p:"Nuestros planes están publicados. Sin reuniones para descubrir el precio, sin sorpresas.",
 
-    // PARA QUIÉN (Mejora 8)
+    // PARA QUIÉN
     pq_title:"¿Es para tu clínica?",
     pq_yes_t:"Es para ti si...",
     pq_yes_1:"Tu clínica ya está activa en Bogotá y tiene procedimientos consolidados",
@@ -38,7 +46,7 @@ const i18n = {
     pq_no_3:"Buscas una agencia genérica que haga de todo para todos los sectores",
     pq_no_4:"Esperas resultados sin inversión sostenida mínima de 60 días",
 
-    // TESTIMONIOS (Mejora 1)
+    // TESTIMONIOS
     test_title:"Lo que dicen los médicos que ya trabajan con nosotros",
     met1_n:"+40", met1_l:"leads calificados / mes (promedio)",
     met2_n:"3.2x", met2_l:"ROI promedio en los primeros 60 días",
@@ -63,9 +71,9 @@ const i18n = {
     p3_t:"Turismo Médico", p3_for:"Pacientes internacionales",
     p3_1:"Todo lo del plan Crecimiento", p3_2:"Campañas internacionales EN/ES", p3_3:"SEO internacional en inglés", p3_4:"Landing pages bilingües por procedimiento", p3_5:"Coordinación de paciente internacional",
     p3_roi:"Un paciente internacional de rinoplastia representa US$3.000–8.000 para tu clínica. Con un solo paciente al mes, el plan se paga solo.",
-    plan_guar:"🛡️ Garantía de 60 días: si no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes.",
+    plan_guar:"Garantía de 60 días: si no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes.",
 
-    // PROCESO (Mejora 7)
+    // PROCESO
     proc_title:"Cómo funciona",
     s1_time:"Semana 1",
     s1_t:"Diagnóstico gratis", s1_p:"Analizamos en vivo tu presencia digital, tus competidores y tus procedimientos estrella. Te mostramos exactamente qué está dejando pacientes sobre la mesa — en menos de 48 horas.",
@@ -74,11 +82,11 @@ const i18n = {
     s3_time:"Mes 2 en adelante",
     s3_t:"Pacientes y reporte", s3_p:"Recibes pacientes calificados de forma constante y un reporte claro de retorno por procedimiento — no por \"me gusta\". Tú ves cada peso invertido y lo que generó.",
 
-    // GARANTÍA (Mejora 4)
+    // GARANTÍA
     gar_title:"Garantía de resultado real",
     gar_text:"Si en 60 días no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes. Sin letras pequeñas.",
 
-    // FAQ (Mejora 3)
+    // FAQ
     faq_title:"Preguntas frecuentes",
     faq1_q:"¿Qué pasa si ya trabajé con otra agencia y no funcionó?",
     faq1_a:"Es la situación más común que vemos. La mayoría de las agencias genéricas optimizan por \"me gusta\" o alcance, no por pacientes reales. Nuestra primera sesión — el diagnóstico gratuito — analiza exactamente qué falló antes y por qué. Solo arrancamos si tenemos claridad de que podemos hacerlo mejor. Y si en 60 días no lo demostramos con números, no pagas el segundo mes.",
@@ -94,7 +102,7 @@ const i18n = {
     faq6_a:"No hay permanencia mínima. Trabajamos mes a mes porque creemos que el cliente debe quedarse por resultados, no por contrato. Las cuentas de Meta Ads y Google Ads son siempre tuyas — las creamos a tu nombre o trabajamos en las que ya tienes. Si decides salir mañana, te llevas todo el histórico, los públicos y los datos acumulados.",
     faq_cta:"Agenda tu diagnóstico gratis",
 
-    // FORMULÁRIO (Mejora 2)
+    // FORMULÁRIO
     form_title:"Quiero mi diagnóstico gratis",
     form_sub:"20 minutos. Sin compromiso. Te mostramos exactamente qué mejorar — vengas o no con nosotros.",
     form_nombre_l:"Tu nombre", form_wa_l:"WhatsApp (con código de país)", form_proc_l:"Procedimiento principal de tu clínica",
@@ -104,10 +112,8 @@ const i18n = {
     proc_odont:"Odontología estética", proc_otro:"Otro",
     form_btn:"Quiero mi diagnóstico gratis",
     form_wa_alt:"¿Prefieres hablar ahora?", form_wa_link:"Escríbenos por WhatsApp",
-    // Mejora 9: microcopy
     form_micro:"Sin permanencia mínima · Sin porcentaje sobre tu pauta · Tus cuentas de anuncios son siempre tuyas.",
     form_pd:"P.D. El diagnóstico es gratuito y lo preparamos en menos de 48 horas.",
-    // Errores de validación
     err_nombre:"Por favor ingresa tu nombre.",
     err_wa:"Por favor ingresa tu WhatsApp con código de país.",
     err_proc:"Por favor selecciona el procedimiento principal.",
@@ -133,6 +139,14 @@ const i18n = {
     prob_title:"Great clinic, but the calendar won't fill up?",
     prob_sub:"Most clinics in Bogotá rely on word of mouth and lose high-value patients already searching on Google and Instagram — including medical tourists from the US, Canada and Venezuela.",
 
+    // EYEBROW LABELS
+    eyebrow_dif:"Specialization",
+    eyebrow_pq:"Who it's for",
+    eyebrow_test:"Results",
+    eyebrow_planes:"Plans",
+    eyebrow_proc:"Process",
+    eyebrow_faq:"Questions",
+
     // DIFERENCIALES
     dif_title:"What makes us different",
     dif1_t:"Aesthetic clinics only", dif1_p:"We specialize in your sector. We speak the language of your procedures and your patients.",
@@ -140,7 +154,7 @@ const i18n = {
     dif3_t:"ROI per procedure", dif3_p:"We show how many patients and how much revenue every dollar generated — by procedure.",
     dif4_t:"Transparent pricing", dif4_p:"Our plans are published. No meetings to find out the price, no surprises.",
 
-    // PARA QUIÉN (Mejora 8)
+    // PARA QUIÉN
     pq_title:"Is it right for your clinic?",
     pq_yes_t:"It's for you if...",
     pq_yes_1:"Your clinic is already active in Bogotá and has established procedures",
@@ -154,7 +168,7 @@ const i18n = {
     pq_no_3:"You're looking for a generic agency that does everything for everyone",
     pq_no_4:"You expect results without a sustained minimum investment of 60 days",
 
-    // TESTIMONIOS (Mejora 1)
+    // TESTIMONIOS
     test_title:"What doctors working with us say",
     met1_n:"+40", met1_l:"qualified leads / month (average)",
     met2_n:"3.2x", met2_l:"average ROI in the first 60 days",
@@ -179,9 +193,9 @@ const i18n = {
     p3_t:"Medical Tourism", p3_for:"International patients",
     p3_1:"Everything in Growth", p3_2:"International EN/ES campaigns", p3_3:"International SEO in English", p3_4:"Bilingual landing pages per procedure", p3_5:"International patient coordination",
     p3_roi:"One international rhinoplasty patient represents US$3,000–8,000 for your clinic. With just one patient per month, the plan pays for itself.",
-    plan_guar:"🛡️ 60-day guarantee: if we don't generate at least 2x the plan value in qualified leads, you don't pay the second month.",
+    plan_guar:"60-day guarantee: if we don't generate at least 2x the plan value in qualified leads, you don't pay the second month.",
 
-    // PROCESO (Mejora 7)
+    // PROCESO
     proc_title:"How it works",
     s1_time:"Week 1",
     s1_t:"Free audit", s1_p:"We review your digital presence, competitors and star procedures live. We show you exactly what's leaving patients on the table — in less than 48 hours.",
@@ -190,11 +204,11 @@ const i18n = {
     s3_time:"Month 2 onward",
     s3_t:"Patients & reporting", s3_p:"You receive qualified patients consistently and a clear ROI report per procedure — not per \"like\". You see every dollar invested and what it generated.",
 
-    // GARANTÍA (Mejora 4)
+    // GARANTÍA
     gar_title:"Real results guarantee",
     gar_text:"If in 60 days we don't generate at least 2x the plan value in qualified leads, you don't pay the second month. No fine print.",
 
-    // FAQ (Mejora 3)
+    // FAQ
     faq_title:"Frequently asked questions",
     faq1_q:"What if I already worked with another agency and it didn't work?",
     faq1_a:"That's the most common situation we see. Most generic agencies optimize for \"likes\" or reach, not real patients. Our first session — the free audit — analyzes exactly what failed before and why. We only start if we're confident we can do better. And if in 60 days we don't prove it with numbers, you don't pay the second month.",
@@ -210,7 +224,7 @@ const i18n = {
     faq6_a:"There is no minimum commitment. We work month to month because we believe clients should stay for results, not because of a contract. Meta Ads and Google Ads accounts are always yours — we create them in your name or work within the ones you already have. If you decide to leave tomorrow, you take all the history, audiences and accumulated data with you.",
     faq_cta:"Book your free audit",
 
-    // FORMULÁRIO (Mejora 2)
+    // FORMULÁRIO
     form_title:"Book my free audit",
     form_sub:"20 minutes. No commitment. We show you exactly what to improve — whether you hire us or not.",
     form_nombre_l:"Your name", form_wa_l:"WhatsApp (with country code)", form_proc_l:"Your clinic's main procedure",
@@ -220,10 +234,8 @@ const i18n = {
     proc_odont:"Aesthetic dentistry", proc_otro:"Other",
     form_btn:"Book my free audit",
     form_wa_alt:"Prefer to talk now?", form_wa_link:"Message us on WhatsApp",
-    // Mejora 9: microcopy
     form_micro:"No minimum commitment · No percentage on your ad spend · Your ad accounts are always yours.",
     form_pd:"P.S. The audit is free and we prepare it in less than 48 hours.",
-    // Errores de validación
     err_nombre:"Please enter your name.",
     err_wa:"Please enter your WhatsApp with country code.",
     err_proc:"Please select the main procedure.",
@@ -243,7 +255,7 @@ function setLang(l) {
     const k = el.getAttribute('data-i18n');
     if (i18n[l][k] !== undefined) el.textContent = i18n[l][k];
   });
-  // Atualizar placeholder do select manualmente (textContent não funciona em <option> em todos os browsers)
+  // Atualizar placeholder do select manualmente
   const selectEl = document.getElementById('fProc');
   if (selectEl) {
     const opts = selectEl.querySelectorAll('option[data-i18n]');
@@ -253,11 +265,18 @@ function setLang(l) {
     });
   }
   document.getElementById('langToggle').textContent = (l === 'es') ? 'EN' : 'ES';
+
+  // Após trocar idioma, re-renderizar contadores que já foram animados
+  document.querySelectorAll('[data-counter]').forEach(el => {
+    if (el.dataset.counterDone) {
+      renderCounterFinal(el);
+    }
+  });
 }
 
 document.getElementById('langToggle').addEventListener('click', () => setLang(lang === 'es' ? 'en' : 'es'));
 
-// ===== ACCORDION FAQ (Mejora 3) =====
+// ===== ACCORDION FAQ =====
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -278,7 +297,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// ===== FORMULÁRIO DE LEAD COM ENVIO VIA WHATSAPP (Mejora 2) =====
+// ===== FORMULÁRIO DE LEAD COM ENVIO VIA WHATSAPP =====
 // PLACEHOLDER: substituir 000000000000 pelo número real da KASHILAV (com código do país, sem +)
 const WA_NUMBER = '000000000000';
 
@@ -308,7 +327,7 @@ if (leadForm) {
       valid = false;
     }
 
-    // Validar WhatsApp — deve ter ao menos 8 dígitos após limpeza
+    // Validar WhatsApp
     const waClean = whatsapp.replace(/[\s\-\(\)]/g, '');
     if (!whatsapp || waClean.replace('+', '').length < 8) {
       document.getElementById('fWa').classList.add('input-error');
@@ -325,7 +344,6 @@ if (leadForm) {
 
     if (!valid) return;
 
-    // Montar mensagem para WhatsApp
     const msgES = `Hola KASHILAV, soy ${nombre}. Mi WhatsApp es ${whatsapp}. El procedimiento principal de mi clínica es: ${proc}. Quiero mi diagnóstico gratis.`;
     const msgEN = `Hello KASHILAV, I'm ${nombre}. My WhatsApp is ${whatsapp}. My clinic's main procedure is: ${proc}. I want my free audit.`;
     const msg   = (lang === 'es') ? msgES : msgEN;
@@ -334,3 +352,88 @@ if (leadForm) {
     window.open(url, '_blank', 'noopener,noreferrer');
   });
 }
+
+// ===== SCROLL REVEAL — IntersectionObserver =====
+(function initScrollReveal() {
+  // Respeitar prefers-reduced-motion — se ativo, marcar tudo como visível sem animação
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    document.querySelectorAll('.reveal-fade').forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const delay = parseInt(el.dataset.delay || '0', 10);
+      setTimeout(() => el.classList.add('is-visible'), delay);
+      revealObserver.unobserve(el);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  document.querySelectorAll('.reveal-fade').forEach(el => revealObserver.observe(el));
+})();
+
+// ===== CONTADORES ANIMADOS =====
+function renderCounterFinal(el) {
+  const key = el.getAttribute('data-i18n');
+  if (key && i18n[lang] && i18n[lang][key] !== undefined) {
+    el.textContent = i18n[lang][key];
+  }
+}
+
+function animateCounter(el) {
+  const target   = parseFloat(el.dataset.counterVal);
+  const prefix   = el.dataset.counterPrefix || '';
+  const suffix   = el.dataset.counterSuffix || '';
+  const decimals = parseInt(el.dataset.counterDecimals || '0', 10);
+  const duration = 1600; // ms
+  const startTime = performance.now();
+
+  function easeOut(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function tick(now) {
+    const elapsed  = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased    = easeOut(progress);
+    const current  = eased * target;
+
+    el.textContent = prefix + current.toFixed(decimals) + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      el.textContent = prefix + target.toFixed(decimals) + suffix;
+      el.dataset.counterDone = '1';
+    }
+  }
+
+  requestAnimationFrame(tick);
+}
+
+(function initCounters() {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      if (el.dataset.counterDone) return;
+
+      if (prefersReduced) {
+        el.dataset.counterDone = '1';
+      } else {
+        animateCounter(el);
+      }
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+})();
