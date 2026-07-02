@@ -3,21 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0A0C10">
+<meta name="theme-color" content="#080A0E">
+<!-- BRAND: nome provisório. Para trocar a marca, edite BRAND em script.js + <title> e <meta description> abaixo. -->
 <title>KASHILAV — Marketing para Clínicas Estéticas en Bogotá</title>
-<meta name="description" content="La primera agencia de marketing especializada en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de ROI por procedimiento.">
+<meta name="description" content="La agencia de performance especializada en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de ROI por procedimiento.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" id="siteNav">
   <div class="container nav-inner">
     <a href="#" class="logo">
-      <svg class="logo-mark" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="28" height="28" rx="7" fill="url(#logoGrad)"/>
+      <svg class="logo-mark" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="28" height="28" rx="8" fill="url(#logoGrad)"/>
         <path d="M8 7v14M8 14l8-7M8 14l8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
         <defs>
           <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
@@ -26,7 +27,7 @@
           </linearGradient>
         </defs>
       </svg>
-      KASHILAV<span>.</span>
+      <span class="brand-name">KASHILAV</span>
     </a>
     <nav class="nav-links">
       <a href="#diferenciales" data-i18n="nav_dif">Diferenciales</a>
@@ -52,34 +53,30 @@
   <div class="container hero-inner">
     <div class="hero-text-col">
       <span class="badge reveal-fade" data-i18n="hero_badge">Especialistas en clínicas estéticas · Bogotá</span>
-      <h1 class="reveal-fade" data-delay="100" data-i18n="hero_title">Más pacientes para tu clínica — locales y del exterior.</h1>
-      <p class="hero-sub reveal-fade" data-delay="200" data-i18n="hero_sub">La primera agencia de marketing enfocada exclusivamente en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de retorno por procedimiento — no por "me gusta".</p>
+      <h1 class="reveal-fade" data-delay="100" data-i18n-html="hero_title">Más pacientes para tu clínica — <em>locales y del exterior.</em></h1>
+      <p class="hero-sub reveal-fade" data-delay="200" data-i18n="hero_sub">La agencia de performance enfocada exclusivamente en clínicas estéticas y turismo médico en Bogotá. Precios transparentes y reporte de retorno por procedimiento — no por "me gusta".</p>
 
       <div class="hero-cta reveal-fade" data-delay="300">
-        <a href="#contacto" class="btn btn-primary" data-i18n="hero_cta1">Agenda tu diagnóstico gratis</a>
+        <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero_cta1">Agenda tu diagnóstico gratis</a>
+        <a href="#planes" class="link-arrow" data-i18n="hero_cta2">Ver planes y precios</a>
       </div>
-      <a href="#planes" class="hero-cta-secondary reveal-fade" data-delay="380" data-i18n="hero_cta2">Ver planes y precios</a>
 
-      <div class="hero-trust reveal-fade" data-delay="460">
+      <div class="hero-trust reveal-fade" data-delay="440">
         <div><strong>ES + EN</strong><span data-i18n="hero_t1">Campañas bilingües</span></div>
         <div><strong>ROI</strong><span data-i18n="hero_t2">por procedimiento</span></div>
         <div><strong>100%</strong><span data-i18n="hero_t3">Precios públicos</span></div>
       </div>
     </div>
 
-    <!-- Dashboard Mockup — visual de produto Apple-style -->
+    <!-- Dashboard Mockup — visual de produto -->
     <div class="hero-dashboard-wrap reveal-fade" data-delay="180" aria-hidden="true">
       <div class="dashboard" id="heroDashboard">
-        <!-- Barra superior do app -->
         <div class="db-topbar">
-          <div class="db-topbar-dots">
-            <span></span><span></span><span></span>
-          </div>
-          <span class="db-topbar-title">ROI Dashboard · KASHILAV</span>
+          <div class="db-topbar-dots"><span></span><span></span><span></span></div>
+          <span class="db-topbar-title">ROI Dashboard · <span class="brand-name">KASHILAV</span></span>
           <span class="db-topbar-live"><span class="db-live-dot"></span>Live</span>
         </div>
 
-        <!-- Cards de métricas -->
         <div class="db-metrics">
           <div class="db-metric-card db-metric-primary">
             <div class="db-metric-label">Pacientes nuevos</div>
@@ -98,71 +95,43 @@
           </div>
         </div>
 
-        <!-- Mini gráfico de barras -->
         <div class="db-chart-wrap">
           <div class="db-chart-header">
             <span class="db-chart-title">Leads por semana</span>
             <span class="db-chart-period">últimas 8 sem.</span>
           </div>
           <div class="db-chart">
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:38%"></div><span>S1</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:55%"></div><span>S2</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:47%"></div><span>S3</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:72%"></div><span>S4</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:65%"></div><span>S5</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:80%"></div><span>S6</span>
-            </div>
-            <div class="db-bar-group">
-              <div class="db-bar" style="--h:88%"></div><span>S7</span>
-            </div>
-            <div class="db-bar-group db-bar-active">
-              <div class="db-bar" style="--h:100%"></div><span>S8</span>
-            </div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:38%"></div><span>S1</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:55%"></div><span>S2</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:47%"></div><span>S3</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:72%"></div><span>S4</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:65%"></div><span>S5</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:80%"></div><span>S6</span></div>
+            <div class="db-bar-group"><div class="db-bar" style="--h:88%"></div><span>S7</span></div>
+            <div class="db-bar-group db-bar-active"><div class="db-bar" style="--h:100%"></div><span>S8</span></div>
           </div>
         </div>
 
-        <!-- Tabela de procedimentos -->
         <div class="db-table-wrap">
-          <div class="db-table-header">
-            <span class="db-chart-title">Por procedimiento</span>
-          </div>
+          <div class="db-table-header"><span class="db-chart-title">Por procedimiento</span></div>
           <table class="db-table">
             <thead>
-              <tr>
-                <th>Procedimiento</th>
-                <th>Leads</th>
-                <th>Pacientes</th>
-                <th>ROI</th>
-              </tr>
+              <tr><th>Procedimiento</th><th>Leads</th><th>Pacientes</th><th>ROI</th></tr>
             </thead>
             <tbody>
               <tr>
                 <td><span class="db-proc-dot" style="background:#2FD4C4"></span>Rinoplastia</td>
-                <td>24</td>
-                <td>11</td>
+                <td>24</td><td>11</td>
                 <td><span class="db-roi-chip db-roi-high">4.2x</span></td>
               </tr>
               <tr>
                 <td><span class="db-proc-dot" style="background:#D9B871"></span>Botox</td>
-                <td>58</td>
-                <td>21</td>
+                <td>58</td><td>21</td>
                 <td><span class="db-roi-chip db-roi-med">3.1x</span></td>
               </tr>
               <tr>
                 <td><span class="db-proc-dot" style="background:#7C9FFF"></span>Liposucción</td>
-                <td>15</td>
-                <td>6</td>
+                <td>15</td><td>6</td>
                 <td><span class="db-roi-chip db-roi-high">5.7x</span></td>
               </tr>
             </tbody>
@@ -170,35 +139,32 @@
         </div>
       </div>
     </div>
-    <!-- /dashboard -->
   </div>
 </section>
 
-<!-- ===== STATEMENT 1 — entre hero e problema ===== -->
+<!-- ===== STATEMENT 1 ===== -->
 <section class="statement-section" aria-label="Statement">
   <div class="container">
-    <p class="statement-text reveal-statement" data-i18n="stmt1">
-      Pacientes reales.<br><em>No "me gusta".</em>
-    </p>
+    <p class="statement-text reveal-statement" data-i18n-html="stmt1">Pacientes reales.<br><em>No "me gusta".</em></p>
   </div>
 </section>
 
 <!-- ===== PROBLEMA ===== -->
 <section class="problem">
   <div class="container">
-    <div class="section-divider" aria-hidden="true"></div>
     <h2 class="reveal-fade" data-i18n="prob_title">¿Tu clínica es excelente, pero la agenda no se llena?</h2>
     <p class="section-sub reveal-fade" data-delay="100" data-i18n="prob_sub">La mayoría de las clínicas en Bogotá dependen del boca a boca y pierden pacientes de alto valor que ya están buscando en Google e Instagram — incluyendo turistas médicos de EE.UU., Canadá y Venezuela.</p>
   </div>
 </section>
 
-<!-- ===== DIFERENCIALES ===== -->
+<!-- ===== DIFERENCIALES — BENTO GRID ===== -->
 <section id="diferenciales" class="dif">
   <div class="container">
     <span class="eyebrow reveal-fade" data-i18n="eyebrow_dif">Especialización</span>
     <h2 class="reveal-fade" data-delay="60" data-i18n="dif_title">Lo que nos hace diferentes</h2>
-    <div class="grid grid-4">
-      <div class="card reveal-fade" data-delay="0">
+
+    <div class="bento">
+      <div class="bento-card bento-lg reveal-fade" data-delay="0">
         <div class="ic">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M11 2l2.39 4.84 5.34.78-3.87 3.77.91 5.32L11 14.27l-4.77 2.44.91-5.32L3.27 7.62l5.34-.78L11 2z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
@@ -206,31 +172,37 @@
         </div>
         <h3 data-i18n="dif1_t">Solo clínicas estéticas</h3>
         <p data-i18n="dif1_p">Nos especializamos en tu sector. Hablamos el idioma de tus procedimientos y de tus pacientes.</p>
+        <div class="bento-chips" aria-hidden="true">
+          <span>Rinoplastia</span><span>Botox</span><span>Lipo</span><span>Fillers</span><span>Odonto</span>
+        </div>
       </div>
-      <div class="card reveal-fade" data-delay="80">
+
+      <div class="bento-card bento-sm reveal-fade" data-delay="90">
         <div class="ic">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.7"/>
-            <path d="M11 2c0 0-4 3.5-4 9s4 9 4 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-            <path d="M11 2c0 0 4 3.5 4 9s-4 9-4 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M11 2c0 0-4 3.5-4 9s4 9 4 9M11 2c0 0 4 3.5 4 9s-4 9-4 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
             <path d="M2.5 8h17M2.5 14h17" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
           </svg>
         </div>
         <h3 data-i18n="dif2_t">Turismo médico bilingüe</h3>
-        <p data-i18n="dif2_p">Atraemos pacientes internacionales con campañas en español e inglés — un canal de alto ticket que casi nadie trabaja.</p>
+        <p data-i18n="dif2_p">Pacientes internacionales con campañas en español e inglés — un canal de alto ticket que casi nadie trabaja.</p>
+        <div class="bento-pill" aria-hidden="true">EN · ES</div>
       </div>
-      <div class="card reveal-fade" data-delay="160">
+
+      <div class="bento-card bento-sm reveal-fade" data-delay="160">
         <div class="ic">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <polyline points="3,17 8,11 13,13 19,5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
             <polyline points="14,5 19,5 19,10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3 20h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
           </svg>
         </div>
         <h3 data-i18n="dif3_t">ROI por procedimiento</h3>
-        <p data-i18n="dif3_p">Te mostramos cuántos pacientes y cuánta facturación generó cada peso invertido — por procedimiento.</p>
+        <p data-i18n="dif3_p">Cuántos pacientes y cuánta facturación generó cada peso invertido — por procedimiento.</p>
+        <div class="bento-ghost" aria-hidden="true">3.8x</div>
       </div>
-      <div class="card reveal-fade" data-delay="240">
+
+      <div class="bento-card bento-lg reveal-fade" data-delay="230">
         <div class="ic">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M11 2l8 6-8 12L3 8l8-6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
@@ -238,13 +210,16 @@
           </svg>
         </div>
         <h3 data-i18n="dif4_t">Precios transparentes</h3>
-        <p data-i18n="dif4_p">Nuestros planes están publicados. Sin reuniones para descubrir el precio, sin sorpresas.</p>
+        <p data-i18n="dif4_p">Nuestros planes están publicados y la inversión se divide en tres partes claras: honorario, pauta y tecnología — la pauta y la tecnología siempre a tu nombre.</p>
+        <div class="bento-chips" aria-hidden="true">
+          <span data-i18n="chip_fee">Honorario</span><span data-i18n="chip_pauta">Pauta</span><span data-i18n="chip_tech">Tecnología</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== PARA QUIÉN ES / PARA QUIÉN NO ES ===== -->
+<!-- ===== PARA QUIÉN ===== -->
 <section class="para-quien">
   <div class="container">
     <span class="eyebrow reveal-fade" data-i18n="eyebrow_pq">Fit</span>
@@ -273,12 +248,10 @@
   </div>
 </section>
 
-<!-- ===== STATEMENT 2 — entre para-quien e testimonios ===== -->
+<!-- ===== STATEMENT 2 ===== -->
 <section class="statement-section statement-section-alt" aria-label="Statement">
   <div class="container">
-    <p class="statement-text reveal-statement" data-i18n="stmt2">
-      Tu clínica, llena.<br><em>Local y del mundo.</em>
-    </p>
+    <p class="statement-text reveal-statement" data-i18n-html="stmt2">Tu clínica, llena.<br><em>Local y del mundo.</em></p>
   </div>
 </section>
 
@@ -304,7 +277,6 @@
     </div>
 
     <div class="grid grid-3 testimonios-grid">
-
       <div class="tcard reveal-fade" data-delay="0">
         <span class="ejemplo-tag" data-i18n="ejemplo_tag">ejemplo</span>
         <div class="tcard-body">
@@ -323,7 +295,7 @@
       <div class="tcard reveal-fade" data-delay="100">
         <span class="ejemplo-tag" data-i18n="ejemplo_tag">ejemplo</span>
         <div class="tcard-body">
-          <p class="tcard-quote" data-i18n="test2_q">"Trabajamos con otra agencia antes y solo nos traían 'me gusta'. Con KASHILAV el reporte me muestra exactamente cuánto generó cada anuncio por procedimiento."</p>
+          <p class="tcard-quote" data-i18n="test2_q">"Trabajamos con otra agencia antes y solo nos traían 'me gusta'. Ahora el reporte me muestra exactamente cuánto generó cada anuncio por procedimiento."</p>
           <div class="tcard-author">
             <div class="tcard-avatar">DM</div>
             <div>
@@ -349,7 +321,6 @@
           <div class="tcard-result" data-i18n="test3_r">+60% de ocupación en cirugías corporales</div>
         </div>
       </div>
-
     </div>
 
     <div class="section-cta">
@@ -363,50 +334,67 @@
   <div class="container">
     <span class="eyebrow reveal-fade" data-i18n="eyebrow_planes">Planes</span>
     <h2 class="reveal-fade" data-delay="60" data-i18n="plan_title">Planes y precios</h2>
-    <p class="section-sub reveal-fade" data-delay="120" data-i18n="plan_sub">Sin permanencia oculta. El presupuesto de anuncios es aparte y siempre en tu cuenta — tú ves cada peso.</p>
-    <div class="grid grid-3">
+    <p class="section-sub reveal-fade" data-delay="120" data-i18n="plan_sub">Inversión transparente en tres partes: honorario de gestión, pauta publicitaria y tecnología. La pauta y la tecnología van aparte y siempre a tu nombre — tú ves cada peso.</p>
+
+    <div class="grid grid-4 plans-grid">
       <div class="plan reveal-fade" data-delay="0">
         <h3 data-i18n="p1_t">Esencial</h3>
         <div class="price">US$690<span>/mes</span></div>
-        <p class="plan-for" data-i18n="p1_for">Clínica pequeña o iniciando</p>
+        <p class="plan-for" data-i18n="p1_for">Clínica pequeña o primera gestión profesional</p>
         <ul>
           <li data-i18n="p1_1">Meta Ads (pacientes locales)</li>
-          <li data-i18n="p1_2">Gestión de redes (2 posts/semana)</li>
-          <li data-i18n="p1_3">Google Business optimizado</li>
-          <li data-i18n="p1_4">Reporte mensual de resultados</li>
+          <li data-i18n="p1_2">4 creativos nuevos al mes</li>
+          <li data-i18n="p1_3">WhatsApp con guion de calificación</li>
+          <li data-i18n="p1_4">Reporte mensual + reunión por video</li>
         </ul>
         <a href="#contacto" class="btn btn-ghost btn-block" data-i18n="p_cta">Quiero este plan</a>
       </div>
-      <div class="plan plan-featured reveal-fade" data-delay="100">
+
+      <div class="plan plan-featured reveal-fade" data-delay="80">
         <span class="plan-tag" data-i18n="p_tag">Más elegido</span>
-        <h3 data-i18n="p2_t">Crecimiento</h3>
-        <div class="price">US$1.490<span>/mes</span></div>
+        <h3 data-i18n="p2_t">Performance</h3>
+        <div class="price">US$890<span>/mes</span></div>
         <p class="plan-for" data-i18n="p2_for">Clínica que quiere crecer en serio</p>
         <ul>
           <li data-i18n="p2_1">Todo lo del plan Esencial</li>
-          <li data-i18n="p2_2">Google Ads + SEO local Bogotá</li>
-          <li data-i18n="p2_3">Contenido bilingüe (ES/EN)</li>
-          <li data-i18n="p2_4">Dashboard de ROI en vivo</li>
-          <li data-i18n="p2_5">Automatización de leads por WhatsApp</li>
+          <li data-i18n="p2_2">Google Ads (búsqueda local)</li>
+          <li data-i18n="p2_3">6–8 creativos al mes</li>
+          <li data-i18n="p2_4">Reactivación de pacientes existentes</li>
+          <li data-i18n="p2_5">Reporte quincenal + 2 reuniones/mes</li>
         </ul>
         <a href="#contacto" class="btn btn-primary btn-block" data-i18n="p_cta">Quiero este plan</a>
       </div>
-      <div class="plan reveal-fade" data-delay="200">
-        <h3 data-i18n="p3_t">Turismo Médico</h3>
-        <div class="price">US$3.200<span>/mes</span></div>
-        <p class="plan-for" data-i18n="p3_for">Pacientes internacionales</p>
+
+      <div class="plan reveal-fade" data-delay="160">
+        <h3 data-i18n="p3_t">Escala</h3>
+        <div class="price">US$1.490<span>/mes</span></div>
+        <p class="plan-for" data-i18n="p3_for">Multi-sede o alto volumen</p>
         <ul>
-          <li data-i18n="p3_1">Todo lo del plan Crecimiento</li>
-          <li data-i18n="p3_2">Campañas internacionales EN/ES</li>
-          <li data-i18n="p3_3">SEO internacional en inglés</li>
-          <li data-i18n="p3_4">Landing pages bilingües por procedimiento</li>
-          <li data-i18n="p3_5">Coordinación de paciente internacional</li>
+          <li data-i18n="p3_1">Todo lo del plan Performance</li>
+          <li data-i18n="p3_2">Chatbot de WhatsApp 24/7 + CRM</li>
+          <li data-i18n="p3_3">10–12 creativos al mes</li>
+          <li data-i18n="p3_4">Dashboard de ROI en vivo</li>
+          <li data-i18n="p3_5">Reunión semanal de resultados</li>
         </ul>
-        <div class="plan-roi-note" data-i18n="p3_roi">Un paciente internacional de rinoplastia representa US$3.000–8.000 para tu clínica. Con un solo paciente al mes, el plan se paga solo.</div>
+        <a href="#contacto" class="btn btn-ghost btn-block" data-i18n="p_cta">Quiero este plan</a>
+      </div>
+
+      <div class="plan reveal-fade" data-delay="240">
+        <h3 data-i18n="p4_t">Turismo Médico</h3>
+        <div class="price">US$2.900<span>/mes</span></div>
+        <p class="plan-for" data-i18n="p4_for">Pacientes internacionales</p>
+        <ul>
+          <li data-i18n="p4_1">Todo lo del plan Escala</li>
+          <li data-i18n="p4_2">Campañas internacionales EN/ES</li>
+          <li data-i18n="p4_3">Landing pages bilingües por procedimiento</li>
+          <li data-i18n="p4_4">Coordinación de paciente internacional</li>
+        </ul>
+        <div class="plan-roi-note" data-i18n="p4_roi">Un paciente internacional de rinoplastia representa US$3.000–8.000 para tu clínica. Con un solo paciente al mes, el plan se paga solo.</div>
         <a href="#contacto" class="btn btn-ghost btn-block" data-i18n="p_cta">Quiero este plan</a>
       </div>
     </div>
-    <p class="guarantee" data-i18n="plan_guar">Garantía de 60 días: si no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes.</p>
+
+    <p class="guarantee" data-i18n="plan_guar">Garantía de 60 días: si no generamos el volumen de leads calificados acordado en el diagnóstico, el segundo mes de gestión es gratis.</p>
   </div>
 </section>
 
@@ -426,7 +414,7 @@
         <span class="num">2</span>
         <div class="step-time" data-i18n="s2_time">Semanas 2–4</div>
         <h3 data-i18n="s2_t">Estrategia y campañas</h3>
-        <p data-i18n="s2_p">Montamos las campañas locales e internacionales en tus propias cuentas de anuncios (Meta + Google). Configuramos la automatización de WhatsApp y el dashboard de ROI. Reunión quincenal de resultados incluida.</p>
+        <p data-i18n="s2_p">Montamos las campañas en tus propias cuentas de anuncios (Meta + Google). Configuramos el WhatsApp con guion de calificación y el reporte de ROI. Reunión de resultados incluida.</p>
       </div>
       <div class="step reveal-fade" data-delay="200">
         <span class="num">3</span>
@@ -438,7 +426,7 @@
   </div>
 </section>
 
-<!-- ===== GARANTÍA EN DESTAQUE ===== -->
+<!-- ===== GARANTÍA ===== -->
 <section class="garantia-section">
   <div class="container">
     <div class="garantia-box reveal-fade">
@@ -456,7 +444,7 @@
       </div>
       <div class="garantia-content">
         <h2 data-i18n="gar_title">Garantía de resultado real</h2>
-        <p data-i18n="gar_text">Si en 60 días no generamos al menos 2x el valor del plan en leads calificados, no pagas el segundo mes. Sin letras pequeñas.</p>
+        <p data-i18n="gar_text">Si en 60 días no generamos el volumen de leads calificados acordado, el segundo mes de gestión es gratis. Sin letras pequeñas.</p>
       </div>
     </div>
   </div>
@@ -472,7 +460,7 @@
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false" data-i18n="faq1_q">¿Qué pasa si ya trabajé con otra agencia y no funcionó?</button>
         <div class="faq-a" hidden>
-          <p data-i18n="faq1_a">Es la situación más común que vemos. La mayoría de las agencias genéricas optimizan por "me gusta" o alcance, no por pacientes reales. Nuestra primera sesión — el diagnóstico gratuito — analiza exactamente qué falló antes y por qué. Solo arrancamos si tenemos claridad de que podemos hacerlo mejor. Y si en 60 días no lo demostramos con números, no pagas el segundo mes.</p>
+          <p data-i18n="faq1_a">Es la situación más común que vemos. La mayoría de las agencias genéricas optimizan por "me gusta" o alcance, no por pacientes reales. Nuestra primera sesión — el diagnóstico gratuito — analiza exactamente qué falló antes y por qué. Solo arrancamos si tenemos claridad de que podemos hacerlo mejor. Y si en 60 días no generamos el volumen de leads calificados acordado, el segundo mes de gestión es gratis.</p>
         </div>
       </div>
 
@@ -486,7 +474,7 @@
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false" data-i18n="faq3_q">¿Cómo sé que el ROI será positivo antes de pagar?</button>
         <div class="faq-a" hidden>
-          <p data-i18n="faq3_a">No puedes saberlo con certeza antes de arrancar — nadie que sea honesto te lo prometería. Lo que sí hacemos: en el diagnóstico gratuito estimamos el costo por lead esperado para tu procedimiento en Bogotá, basado en referencias del mercado. Si los números no cierran, te lo decimos antes de que pagues un peso. Y si arrancamos y en 60 días no alcanzamos 2x el valor del plan en leads calificados, el segundo mes no se cobra.</p>
+          <p data-i18n="faq3_a">No puedes saberlo con certeza antes de arrancar — nadie que sea honesto te lo prometería. Lo que sí hacemos: en el diagnóstico gratuito estimamos el costo por lead esperado para tu procedimiento en Bogotá y acordamos juntos una meta de leads calificados. Si los números no cierran, te lo decimos antes de que pagues un peso. Y si arrancamos y en 60 días no alcanzamos la meta acordada, el segundo mes de gestión es gratis.</p>
         </div>
       </div>
 
@@ -519,7 +507,7 @@
   </div>
 </section>
 
-<!-- ===== FORMULÁRIO DE LEAD ===== -->
+<!-- ===== FORMULARIO ===== -->
 <section id="contacto" class="lead-form-section">
   <div class="container">
     <div class="lead-form-box reveal-fade">
@@ -557,7 +545,7 @@
 
       <p class="wa-alt">
         <span data-i18n="form_wa_alt">¿Prefieres hablar ahora?</span>
-        <a id="waDirectBtn" href="https://wa.me/000000000000?text=Hola%2C%20quiero%20mi%20diagn%C3%B3stico%20gratis%20para%20mi%20cl%C3%ADnica" target="_blank" rel="noopener" data-i18n="form_wa_link">Escríbenos por WhatsApp</a>
+        <a id="waDirectBtn" href="#" target="_blank" rel="noopener" data-i18n="form_wa_link">Escríbenos por WhatsApp</a>
       </p>
 
       <p class="microcopy-seg" data-i18n="form_micro">Sin permanencia mínima · Sin porcentaje sobre tu pauta · Tus cuentas de anuncios son siempre tuyas.</p>
@@ -570,7 +558,7 @@
   <div class="container footer-inner">
     <span class="logo">
       <svg class="logo-mark" width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="28" height="28" rx="7" fill="url(#logoGradFt)"/>
+        <rect width="28" height="28" rx="8" fill="url(#logoGradFt)"/>
         <path d="M8 7v14M8 14l8-7M8 14l8 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
         <defs>
           <linearGradient id="logoGradFt" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
@@ -579,7 +567,7 @@
           </linearGradient>
         </defs>
       </svg>
-      KASHILAV<span>.</span>
+      <span class="brand-name">KASHILAV</span>
     </span>
     <p data-i18n="foot">Marketing especializado para clínicas estéticas y turismo médico · Bogotá, Colombia</p>
   </div>
