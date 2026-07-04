@@ -4,7 +4,7 @@
 // este bloco (+ <title> e <meta description> no index.html).
 // ===================================================
 const BRAND = {
-  name: 'KASHILAV',          // nome exibido em todo o site
+  name: 'VECTA',              // nome exibido em todo o site
   whatsapp: '000000000000'   // número de WhatsApp com código do país, sem "+" (ex: 573001234567)
 };
 
