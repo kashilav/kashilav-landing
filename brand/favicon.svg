@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vecta">
+  <!-- Favicon: com fundo, pra não sumir em tamanho pequeno (o mark "limpo" não tem fundo) -->
+  <rect width="32" height="32" rx="9" fill="#0B0D11"/>
+  <path d="M8 23L23 8M15 8H23V16" stroke="url(#vectaGradFav)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="vectaGradFav" x1="8" y1="23" x2="23" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2FD4C4"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+</svg>

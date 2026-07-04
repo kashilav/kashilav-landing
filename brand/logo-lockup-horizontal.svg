@@ -1,0 +1,10 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vecta">
+  <path d="M10 54L54 10M30 10H54V34" stroke="url(#vectaGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="42" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="0.5" fill="#F2F4F7">VECTA</text>
+  <defs>
+    <linearGradient id="vectaGrad" x1="10" y1="54" x2="54" y2="10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2FD4C4"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+</svg>
