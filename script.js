@@ -18,7 +18,7 @@ applyBrand();
 const i18n = {
   es: {
     // NAV
-    nav_sistema:"El sistema", nav_proceso:"Cómo funciona", nav_planes:"Planes",
+    nav_sistema:"El sistema", nav_servicios:"Servicios", nav_proceso:"Cómo funciona", nav_planes:"Planes",
     nav_faq:"FAQ", nav_cta:"Diagnóstico gratuito",
 
     // HERO
@@ -51,6 +51,17 @@ const i18n = {
     sys3_t:"3 · Agendamiento", sys3_p:"Respondemos rápido y llevamos cada conversación hasta una consulta confirmada en tu calendario. Cada hora de espera le regala pacientes a tu competencia.",
     sys4_t:"4 · Medición y escala", sys4_p:"Cada mes sabes cuántos pacientes entraron, cuánto costó cada uno y cuánta facturación generó cada procedimiento. Con esos números validados, subimos la inversión en lo que funciona y cortamos lo que no.",
     chip_pac:"Pacientes", chip_costo:"Costo por paciente", chip_fact:"Facturación",
+
+    // SERVICIOS — hub
+    eyebrow_serv:"Servicios",
+    serv_title:"Todo lo que el sistema instala en tu clínica",
+    serv_sub:"Seis frentes de trabajo, un solo objetivo: más pacientes en tu agenda.",
+    serv1_l:"Anuncios de captación",
+    serv2_l:"Creativos y contenido",
+    serv3_l:"WhatsApp y agendamiento",
+    serv4_l:"CRM y seguimiento",
+    serv5_l:"Reporte de facturación",
+    serv6_l:"Turismo médico",
 
     // PROCESO — 7 pasos
     proc_title:"Cómo funciona, paso a paso",
@@ -169,7 +180,7 @@ const i18n = {
 
   en: {
     // NAV
-    nav_sistema:"The system", nav_proceso:"How it works", nav_planes:"Plans",
+    nav_sistema:"The system", nav_servicios:"Services", nav_proceso:"How it works", nav_planes:"Plans",
     nav_faq:"FAQ", nav_cta:"Free growth audit",
 
     // HERO
@@ -202,6 +213,17 @@ const i18n = {
     sys3_t:"3 · Booking", sys3_p:"We respond fast and walk every conversation to a confirmed consultation in your calendar. Every hour of silence hands patients to your competitors.",
     sys4_t:"4 · Measurement and scale", sys4_p:"Every month you know how many patients came in, what each one cost and how much revenue each procedure generated. With those numbers validated, we increase investment in what works and cut what doesn't.",
     chip_pac:"Patients", chip_costo:"Cost per patient", chip_fact:"Revenue",
+
+    // SERVICIOS — hub
+    eyebrow_serv:"Services",
+    serv_title:"Everything the system installs in your clinic",
+    serv_sub:"Six work fronts, one goal: more patients in your calendar.",
+    serv1_l:"Patient acquisition ads",
+    serv2_l:"Creatives and content",
+    serv3_l:"WhatsApp and booking",
+    serv4_l:"CRM and follow-up",
+    serv5_l:"Revenue reporting",
+    serv6_l:"Medical tourism",
 
     // PROCESO
     proc_title:"How it works, step by step",
