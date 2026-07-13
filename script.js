@@ -18,7 +18,7 @@ applyBrand();
 const i18n = {
   es: {
     // NAV
-    nav_sistema:"El sistema", nav_servicios:"Servicios", nav_proceso:"Cómo funciona", nav_planes:"Planes",
+    nav_sistema:"El sistema", nav_servicios:"Servicios", nav_proceso:"Cómo funciona", nav_planes:"Planes", nav_journey:"La experiencia",
     nav_faq:"FAQ", nav_cta:"Diagnóstico gratuito",
 
     // HERO
@@ -28,6 +28,25 @@ const i18n = {
     hero_cta1:"Solicitar diagnóstico gratuito",
     hero_cta2:"Conocer el sistema",
     hero_t1:"Captación bilingüe", hero_t2:"por procedimiento", hero_t3:"Precios públicos",
+    demo_label:"Demostración del sistema", scroll_cue:"Explora el recorrido",
+
+    // JORNADA INTERACTIVA
+    journey_eyebrow:"Una experiencia conectada",
+    journey_title:'De una búsqueda a una consulta.<br><em>Sin perder el hilo.</em>',
+    journey_sub:"Recorre el sistema. Cada etapa conserva el contexto de la anterior para convertir interés en una oportunidad medible.",
+    journey_live:"Recorrido en vivo",
+    journey_scene_1:"01 · Descubrimiento", journey_scene_2:"02 · Conversación", journey_scene_3:"03 · Calificación", journey_scene_4:"04 · Agendamiento", journey_scene_5:"05 · Retorno",
+    scene_search_query:"mejor clínica de rinoplastia en Bogotá", scene_sponsored:"Patrocinado",
+    scene_search_title:"Rinoplastia con evaluación personalizada", scene_search_text:"Conoce opciones, tiempos y agenda una valoración.",
+    scene_chat_1:"Hola, quiero saber si soy candidata para una rinoplastia.", scene_chat_2:"Claro. Te haré 3 preguntas para orientarte mejor.",
+    scene_profile:"Perfil del paciente", scene_intent:"Intención alta", scene_timing:"Decisión en 30 días", scene_location:"Bogotá",
+    scene_calendar:"Agenda clínica", scene_appointment:"Valoración · Rinoplastia",
+    scene_result:"Resultado atribuible", scene_demo:"Simulación", scene_revenue:"Facturación asociada al procedimiento",
+    journey_1_title:"Aparece cuando la intención ya existe", journey_1_text:"La clínica entra en la conversación en el momento exacto en que alguien busca un procedimiento.",
+    journey_2_title:"Responde mientras el interés está caliente", journey_2_text:"Un primer contacto claro y ágil evita que la oportunidad termine en la agenda de otra clínica.",
+    journey_3_title:"Separa curiosidad de intención real", journey_3_text:"El sistema organiza contexto, momento de decisión y procedimiento para priorizar cada conversación.",
+    journey_4_title:"Convierte la conversación en una cita", journey_4_text:"Seguimiento, recordatorios y una ruta sencilla llevan al paciente hasta una valoración confirmada.",
+    journey_5_title:"Conecta cada resultado con su origen", journey_5_text:"La clínica puede entender qué procedimiento, canal y conversación generaron facturación.",
 
     // STATEMENTS
     stmt1:'Pacientes reales.<br><em>No "me gusta".</em>',
@@ -76,7 +95,11 @@ const i18n = {
 
     // ROI
     roi_title:"Piensa en retorno, no en costo",
-    roi_sub:"Un ejemplo con números conservadores:",
+    roi_sub:"Mueve los controles y construye un escenario con los números de tu clínica.",
+    roi_ticket:"Ticket promedio", roi_patients:"Pacientes adicionales al mes", roi_investment:"Inversión mensual total",
+    roi_scenario:"Escenario estimado", roi_revenue_label:"Facturación adicional", roi_per_month:"por mes",
+    roi_return_label:"Retorno sobre inversión", roi_balance_label:"Diferencia estimada",
+    roi_disclaimer:"Simulación educativa. No representa una promesa de resultados.",
     roi_r1_l:"Ticket promedio de un procedimiento",
     roi_r2_l:"Pacientes adicionales por mes (meta inicial)",
     roi_r3_l:"Ingreso adicional por mes",
@@ -180,7 +203,7 @@ const i18n = {
 
   en: {
     // NAV
-    nav_sistema:"The system", nav_servicios:"Services", nav_proceso:"How it works", nav_planes:"Plans",
+    nav_sistema:"The system", nav_servicios:"Services", nav_proceso:"How it works", nav_planes:"Plans", nav_journey:"The experience",
     nav_faq:"FAQ", nav_cta:"Free growth audit",
 
     // HERO
@@ -190,6 +213,25 @@ const i18n = {
     hero_cta1:"Request your free growth audit",
     hero_cta2:"See how the system works",
     hero_t1:"Bilingual acquisition", hero_t2:"per procedure", hero_t3:"Public pricing",
+    demo_label:"System demonstration", scroll_cue:"Explore the journey",
+
+    // INTERACTIVE JOURNEY
+    journey_eyebrow:"One connected experience",
+    journey_title:'From a search to a consultation.<br><em>Without losing context.</em>',
+    journey_sub:"Explore the system. Each stage keeps the context from the previous one to turn interest into a measurable opportunity.",
+    journey_live:"Live journey",
+    journey_scene_1:"01 · Discovery", journey_scene_2:"02 · Conversation", journey_scene_3:"03 · Qualification", journey_scene_4:"04 · Booking", journey_scene_5:"05 · Return",
+    scene_search_query:"best rhinoplasty clinic in Bogotá", scene_sponsored:"Sponsored",
+    scene_search_title:"Rhinoplasty with a personalized evaluation", scene_search_text:"Explore options, timing and book an evaluation.",
+    scene_chat_1:"Hi, I'd like to know if I'm a candidate for rhinoplasty.", scene_chat_2:"Of course. I'll ask you 3 questions to guide you better.",
+    scene_profile:"Patient profile", scene_intent:"High intent", scene_timing:"Decision within 30 days", scene_location:"Bogotá",
+    scene_calendar:"Clinic calendar", scene_appointment:"Evaluation · Rhinoplasty",
+    scene_result:"Attributable result", scene_demo:"Simulation", scene_revenue:"Revenue associated with the procedure",
+    journey_1_title:"Show up when intent already exists", journey_1_text:"The clinic joins the conversation at the exact moment someone searches for a procedure.",
+    journey_2_title:"Respond while interest is still warm", journey_2_text:"A clear, fast first contact keeps the opportunity from ending up in another clinic's calendar.",
+    journey_3_title:"Separate curiosity from real intent", journey_3_text:"The system organizes context, decision timing and procedure to prioritize each conversation.",
+    journey_4_title:"Turn the conversation into an appointment", journey_4_text:"Follow-up, reminders and a simple journey guide the patient to a confirmed evaluation.",
+    journey_5_title:"Connect every result to its origin", journey_5_text:"The clinic can understand which procedure, channel and conversation generated revenue.",
 
     // STATEMENTS
     stmt1:'Real patients.<br><em>Not "likes".</em>',
@@ -238,7 +280,11 @@ const i18n = {
 
     // ROI
     roi_title:"Think return, not cost",
-    roi_sub:"An example with conservative numbers:",
+    roi_sub:"Move the controls and build a scenario with your clinic's numbers.",
+    roi_ticket:"Average ticket", roi_patients:"Additional patients per month", roi_investment:"Total monthly investment",
+    roi_scenario:"Estimated scenario", roi_revenue_label:"Additional revenue", roi_per_month:"per month",
+    roi_return_label:"Return on investment", roi_balance_label:"Estimated difference",
+    roi_disclaimer:"Educational simulation. This is not a promise of results.",
     roi_r1_l:"Average ticket of one procedure",
     roi_r2_l:"Additional patients per month (initial target)",
     roi_r3_l:"Additional revenue per month",
@@ -377,6 +423,18 @@ function setLang(l) {
 
   // Reaplicar marca (alguns textos podem tê-la)
   applyBrand();
+
+  // Atualizar o rótulo da cena que estiver ativa
+  const visual = document.getElementById('journeyVisual');
+  const sceneLabel = document.getElementById('journeySceneLabel');
+  if (visual && sceneLabel) {
+    const scene = visual.dataset.scene || '1';
+    sceneLabel.textContent = i18n[l][`journey_scene_${scene}`] || '';
+  }
+
+  // Reformatar valores da calculadora para o idioma ativo
+  const roiTicket = document.getElementById('roiTicket');
+  if (roiTicket) roiTicket.dispatchEvent(new Event('input'));
 }
 
 document.getElementById('langToggle').addEventListener('click', () => setLang(lang === 'es' ? 'en' : 'es'));
@@ -390,6 +448,105 @@ document.getElementById('langToggle').addEventListener('click', () => setLang(la
   }
   update();
   window.addEventListener('scroll', update, { passive: true });
+})();
+
+// ===== NAVEGAÇÃO MOBILE =====
+(function initMobileMenu() {
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mobileMenu');
+  if (!toggle || !menu) return;
+
+  function closeMenu() {
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menú');
+    menu.hidden = true;
+  }
+
+  toggle.addEventListener('click', () => {
+    const willOpen = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(willOpen));
+    toggle.setAttribute('aria-label', willOpen ? 'Cerrar menú' : 'Abrir menú');
+    menu.hidden = !willOpen;
+  });
+
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu(); }, { passive: true });
+})();
+
+// ===== JORNADA INTERATIVA CONTROLADA PELO SCROLL =====
+(function initJourney() {
+  const visual = document.getElementById('journeyVisual');
+  const progress = document.getElementById('journeyProgress');
+  const label = document.getElementById('journeySceneLabel');
+  const steps = [...document.querySelectorAll('[data-journey-step]')];
+  if (!visual || !steps.length) return;
+
+  function setScene(scene) {
+    const next = String(scene);
+    if (visual.dataset.scene === next) return;
+    visual.dataset.scene = next;
+    steps.forEach(step => step.classList.toggle('is-active', step.dataset.journeyStep === next));
+    if (progress) progress.style.width = `${Number(next) * 20}%`;
+    if (label) label.textContent = i18n[lang][`journey_scene_${next}`] || '';
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (visible) setScene(visible.target.dataset.journeyStep);
+  }, { threshold: [0.2, 0.45, 0.7], rootMargin: '-18% 0px -28% 0px' });
+
+  steps.forEach(step => observer.observe(step));
+  setScene('1');
+})();
+
+// ===== CALCULADORA DE RETORNO =====
+(function initRoiCalculator() {
+  const ticket = document.getElementById('roiTicket');
+  const patients = document.getElementById('roiPatients');
+  const investment = document.getElementById('roiInvestment');
+  if (!ticket || !patients || !investment) return;
+
+  const ticketOut = document.getElementById('roiTicketOut');
+  const patientsOut = document.getElementById('roiPatientsOut');
+  const investmentOut = document.getElementById('roiInvestmentOut');
+  const revenueOut = document.getElementById('roiRevenueOut');
+  const returnOut = document.getElementById('roiReturnOut');
+  const balanceOut = document.getElementById('roiBalanceOut');
+
+  function money(value) {
+    return new Intl.NumberFormat(lang === 'es' ? 'es-CO' : 'en-US', {
+      style: 'currency', currency: 'USD', maximumFractionDigits: 0
+    }).format(value);
+  }
+
+  function paintRange(input) {
+    const progress = ((Number(input.value) - Number(input.min)) / (Number(input.max) - Number(input.min))) * 100;
+    input.style.setProperty('--range-progress', `${progress}%`);
+  }
+
+  function update() {
+    const ticketValue = Number(ticket.value);
+    const patientValue = Number(patients.value);
+    const investmentValue = Number(investment.value);
+    const revenue = ticketValue * patientValue;
+    const roi = revenue / investmentValue;
+    const balance = revenue - investmentValue;
+
+    ticketOut.textContent = money(ticketValue);
+    patientsOut.textContent = String(patientValue);
+    investmentOut.textContent = money(investmentValue);
+    revenueOut.textContent = money(revenue);
+    returnOut.textContent = `${roi.toFixed(1)}x`;
+    balanceOut.textContent = money(balance);
+    balanceOut.style.color = balance >= 0 ? 'var(--primary)' : '#ff8e8e';
+    [ticket, patients, investment].forEach(paintRange);
+  }
+
+  [ticket, patients, investment].forEach(input => input.addEventListener('input', update));
+  update();
 })();
 
 // ===== ACCORDION FAQ =====
@@ -528,6 +685,176 @@ function animateCounter(el) {
     });
   }, { threshold: 0.3 });
   document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+})();
+
+// ===== HUB DE SERVIÇOS — CUBOS SAINDO DO CENTRO =====
+(function initServicesHubMotion() {
+  const hub = document.querySelector('.hub-graphic');
+  if (!hub) return;
+
+  const stage = hub.closest('.hub-scroll-stage');
+  const center = hub.querySelector('.hub-center');
+  const circles = hub.querySelector('.hub-circles');
+  const nodes = [...hub.querySelectorAll('.hub-node')];
+  const paths = [...hub.querySelectorAll('.hub-line')];
+  if (!center || !nodes.length) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const desktop = window.matchMedia('(min-width: 901px)');
+  const groups = [0, 0, 1, 1, 2, 2];
+  const curves = [
+    [-13, -12], [0, 0], [-13, 12],
+    [13, -12], [0, 0], [13, 12]
+  ];
+  let metrics = [];
+  let rafPending = false;
+
+  const clamp = value => Math.min(1, Math.max(0, value));
+  const easeOutBack = value => {
+    const amount = 1.08;
+    const shifted = value - 1;
+    return 1 + (amount + 1) * shifted ** 3 + amount * shifted ** 2;
+  };
+
+  nodes.forEach((node, index) => node.style.setProperty('--hub-i', index));
+  hub.classList.add('hub-motion-ready');
+
+  function clearInlineMotion() {
+    nodes.forEach(node => {
+      const icon = node.querySelector('.hub-node-icon');
+      const label = node.querySelector('.hub-node-label');
+      if (icon) {
+        icon.style.transform = '';
+        icon.style.opacity = '';
+        icon.style.filter = '';
+      }
+      if (label) {
+        label.style.transform = '';
+        label.style.opacity = '';
+        label.style.filter = '';
+      }
+      node.classList.remove('is-arrived');
+    });
+    paths.forEach(path => {
+      path.style.opacity = '';
+      path.style.strokeDashoffset = '';
+      path.style.filter = '';
+    });
+    center.style.transform = '';
+    center.style.filter = '';
+    if (circles) {
+      circles.style.transform = '';
+      circles.style.opacity = '';
+    }
+    hub.classList.remove('is-settled');
+  }
+
+  function measure() {
+    if (!desktop.matches || reducedMotion.matches) {
+      clearInlineMotion();
+      return;
+    }
+
+    const centerRect = center.getBoundingClientRect();
+    const centerX = centerRect.left + centerRect.width / 2;
+    const centerY = centerRect.top + centerRect.height / 2;
+    metrics = nodes.map(node => {
+      const icon = node.querySelector('.hub-node-icon');
+      const rect = icon.getBoundingClientRect();
+      return {
+        icon,
+        label: node.querySelector('.hub-node-label'),
+        dx: centerX - (rect.left + rect.width / 2),
+        dy: centerY - (rect.top + rect.height / 2)
+      };
+    });
+    update();
+  }
+
+  function update() {
+    rafPending = false;
+    if (!desktop.matches || reducedMotion.matches || !metrics.length) return;
+
+    const stageRect = (stage || hub).getBoundingClientRect();
+    const stickyTop = Math.max(84, (window.innerHeight - hub.offsetHeight) / 2);
+    const releaseTop = stickyTop + hub.offsetHeight - (stage ? stage.offsetHeight : hub.offsetHeight);
+    const stageProgress = clamp((stickyTop - stageRect.top) / Math.max(1, stickyTop - releaseTop));
+    // A montagem ocupa 78% da área fixa; os 22% finais exibem o sistema completo.
+    const progress = clamp(stageProgress / .78);
+    const ignition = clamp(progress / .16);
+
+    center.style.transform = `scale(${(.88 + ignition * .12).toFixed(3)}) rotate(${((1 - ignition) * -8).toFixed(2)}deg)`;
+    center.style.filter = `drop-shadow(0 10px ${Math.round(22 + ignition * 18)}px rgba(47,212,196,${(.18 + ignition * .18).toFixed(2)}))`;
+    if (circles) {
+      circles.style.transform = `translate(-50%, -50%) scale(${(.86 + ignition * .14).toFixed(3)})`;
+      circles.style.opacity = String(.35 + ignition * .65);
+    }
+
+    paths.forEach((path, index) => {
+      const group = groups[index] || 0;
+      const lineProgress = clamp((progress - (.04 + group * .18)) / .42);
+      if (lineProgress >= .999) {
+        path.style.opacity = '';
+        path.style.strokeDashoffset = '';
+        path.style.filter = '';
+      } else {
+        path.style.opacity = String(lineProgress);
+        path.style.strokeDashoffset = `${((1 - lineProgress) * 34).toFixed(1)}px`;
+        path.style.filter = `drop-shadow(0 0 ${Math.round(lineProgress * 5)}px rgba(47,212,196,.55))`;
+      }
+    });
+
+    metrics.forEach((metric, index) => {
+      const group = groups[index];
+      const local = clamp((progress - (.12 + group * .18)) / .48);
+      const eased = easeOutBack(local);
+      const arc = Math.sin(Math.PI * local);
+      const tx = metric.dx * (1 - eased) + curves[index][0] * arc;
+      const ty = metric.dy * (1 - eased) + curves[index][1] * arc;
+      const scale = .24 + .76 * Math.min(1, eased);
+      const opacity = clamp(local / .18);
+      const labelProgress = clamp((local - .66) / .34);
+
+      if (local >= .999) {
+        metric.icon.style.transform = '';
+        metric.icon.style.opacity = '';
+        metric.icon.style.filter = '';
+      } else {
+        metric.icon.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${scale.toFixed(3)})`;
+        metric.icon.style.opacity = String(opacity);
+        metric.icon.style.filter = `blur(${((1 - opacity) * 5).toFixed(2)}px)`;
+      }
+
+      if (labelProgress >= .999) {
+        metric.label.style.transform = '';
+        metric.label.style.opacity = '';
+        metric.label.style.filter = '';
+      } else {
+        metric.label.style.transform = `translateY(${((1 - labelProgress) * 12).toFixed(1)}px)`;
+        metric.label.style.opacity = String(labelProgress);
+        metric.label.style.filter = `blur(${((1 - labelProgress) * 4).toFixed(2)}px)`;
+      }
+      nodes[index].classList.toggle('is-arrived', local > .91);
+    });
+
+    hub.classList.toggle('is-settled', progress > .985);
+  }
+
+  function queueUpdate() {
+    if (rafPending) return;
+    rafPending = true;
+    requestAnimationFrame(update);
+  }
+
+  let resizeTimer;
+  window.addEventListener('scroll', queueUpdate, { passive: true });
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(measure, 120);
+  }, { passive: true });
+  desktop.addEventListener('change', measure);
+  reducedMotion.addEventListener('change', measure);
+  measure();
 })();
 
 // ===== ANIMAÇÕES CINEMATOGRÁFICAS =====
