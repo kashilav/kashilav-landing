@@ -168,7 +168,7 @@ const i18n = {
     faq4_q:"¿Cómo sé que el retorno será positivo antes de pagar?",
     faq4_a:"No puedes saberlo con certeza antes de arrancar. Nadie honesto te prometería eso. Lo que sí hacemos: en el diagnóstico gratuito estimamos el costo por paciente esperado para tu procedimiento y tu ciudad, y acordamos juntos una meta. Si los números no cierran, te lo decimos antes de que pagues un peso. Y si arrancamos y en 60 días no alcanzamos la meta acordada, el segundo mes de gestión es gratis.",
     faq5_q:"¿Entienden los procedimientos estéticos o son una agencia genérica?",
-    faq5_a:"Trabajamos únicamente con clínicas estéticas, odontológicas y de medicina estética. Conocemos la diferencia entre rinoplastia abierta y cerrada, entre toxina botulínica y fillers, y cómo cada procedimiento tiene un ciclo de decisión distinto en el paciente. Eso cambia el mensaje, la segmentación y la página de destino. Una agencia genérica no puede hacer eso bien.",
+    faq5_a:"Trabajamos únicamente con clínicas del sector estético: medicina estética y armonización facial, cirugía plástica, dermatología estética, odontología estética, trasplante capilar y medicina para bajar de peso. Conocemos la diferencia entre rinoplastia abierta y cerrada, entre toxina botulínica y fillers, y cómo cada procedimiento tiene un ciclo de decisión distinto en el paciente. Eso cambia el mensaje, la segmentación y la página de destino. Una agencia genérica no puede hacer eso bien.",
     faq6_q:"¿Trabajan solo con Bogotá?",
     faq6_a:"Hoy trabajamos con clínicas en Bogotá, Medellín y Cali. La operación es 100% remota, así que la ciudad no limita la calidad del servicio. Lo que sí limita es nuestra política de exclusividad: aceptamos un número limitado de clínicas por ciudad y por especialidad, para no captar pacientes para dos competidores directos a la vez.",
     faq7_q:"¿Puedo contratar solo una parte del servicio?",
@@ -178,7 +178,7 @@ const i18n = {
     faq9_q:"¿Hay permanencia mínima? ¿De quién son las cuentas publicitarias?",
     faq9_a:"No hay permanencia mínima. Trabajamos mes a mes porque el cliente debe quedarse por resultados, no por contrato. Las cuentas publicitarias son siempre tuyas: las creamos a tu nombre o trabajamos en las que ya tienes. Si decides salir mañana, te llevas el histórico, los públicos y todos los datos acumulados.",
     faq10_q:"¿Qué diferencia a Vecta de otras agencias?",
-    faq10_a:"Cuatro cosas. Uno: trabajamos únicamente con clínicas estéticas, no con cualquier negocio. Dos: instalamos un sistema completo de captación, calificación y agendamiento, no anuncios sueltos. Tres: medimos en pacientes y facturación por procedimiento, no en seguidores. Cuatro: limitamos el número de clínicas por ciudad y especialidad, y respaldamos el trabajo con una garantía real de 60 días.",
+    faq10_a:"Cuatro cosas. Uno: trabajamos únicamente con clínicas del sector estético, no con cualquier negocio. Dos: instalamos un sistema completo de captación, calificación y agendamiento, no anuncios sueltos. Tres: medimos en pacientes y facturación por procedimiento, no en seguidores. Cuatro: limitamos el número de clínicas por ciudad y especialidad, y respaldamos el trabajo con una garantía real de 60 días.",
     faq_cta:"Recibir un análisis estratégico",
 
     // FORMULARIO
@@ -353,7 +353,7 @@ const i18n = {
     faq4_q:"How do I know the return will be positive before paying?",
     faq4_a:"You can't know for certain before starting. No honest person would promise that. What we do: in the free audit we estimate the expected cost per patient for your procedure and your city, and we agree on a target together. If the numbers don't work, we tell you before you pay a cent. And if we start and don't reach the agreed target in 60 days, the second month of management is free.",
     faq5_q:"Do you understand aesthetic procedures or are you a generic agency?",
-    faq5_a:"We work only with aesthetic, dental and aesthetic-medicine clinics. We know the difference between open and closed rhinoplasty, between botulinum toxin and fillers, and how each procedure has a different decision cycle. That changes the message, the targeting and the landing page. A generic agency can't do that well.",
+    faq5_a:"We work only with clinics in the aesthetic sector: aesthetic medicine and facial harmonization, plastic surgery, aesthetic dermatology, aesthetic dentistry, hair transplant and medical weight loss. We know the difference between open and closed rhinoplasty, between botulinum toxin and fillers, and how each procedure has a different decision cycle. That changes the message, the targeting and the landing page. A generic agency can't do that well.",
     faq6_q:"Do you only work with Bogotá?",
     faq6_a:"Today we work with clinics in Bogotá, Medellín and Cali. The operation is 100% remote, so the city doesn't limit service quality. What does limit is our exclusivity policy: we accept a limited number of clinics per city and specialty, so we never acquire patients for two direct competitors at once.",
     faq7_q:"Can I hire only part of the service?",
@@ -363,7 +363,7 @@ const i18n = {
     faq9_q:"Is there a minimum commitment? Who owns the ad accounts?",
     faq9_a:"There is no minimum commitment. We work month to month because clients should stay for results, not because of a contract. The ad accounts are always yours: we create them in your name or work within the ones you already have. If you decide to leave tomorrow, you take the history, the audiences and all the accumulated data.",
     faq10_q:"What makes Vecta different from other agencies?",
-    faq10_a:"Four things. One: we work only with aesthetic clinics, not with any business. Two: we install a complete system for attracting, qualifying and booking patients, not loose ads. Three: we measure in patients and revenue per procedure, not followers. Four: we limit the number of clinics per city and specialty, and we back the work with a real 60-day guarantee.",
+    faq10_a:"Four things. One: we work only with clinics in the aesthetic sector, not with any business. Two: we install a complete system for attracting, qualifying and booking patients, not loose ads. Three: we measure in patients and revenue per procedure, not followers. Four: we limit the number of clinics per city and specialty, and we back the work with a real 60-day guarantee.",
     faq_cta:"Get a strategic analysis",
 
     // FORMULARIO
