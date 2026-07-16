@@ -5,7 +5,7 @@
 // ===================================================
 const BRAND = {
   name: 'VECTA',              // nome exibido em todo o site
-  whatsapp: '000000000000'   // número de WhatsApp com código do país, sem "+" (ex: 573001234567)
+  whatsapp: '573150227207'   // número de WhatsApp com código do país, sem "+" (ex: 573001234567)
 };
 
 // Aplica o nome da marca em todos os elementos .brand-name
