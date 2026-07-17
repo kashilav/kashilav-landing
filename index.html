@@ -30,6 +30,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/svg+xml" href="brand/favicon.svg">
+<link rel="canonical" href="https://www.vectamkt.com/">
+
+<!-- Dados estruturados (Schema.org) — ajuda o Google a entender quem somos e o que fazemos -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.vectamkt.com/#organization",
+      "name": "Vecta",
+      "url": "https://www.vectamkt.com/",
+      "logo": "https://www.vectamkt.com/brand/logo-mark.png",
+      "image": "https://www.vectamkt.com/brand/og-image.png",
+      "email": "contacto@vectamkt.com",
+      "description": "Sistema de captación de pacientes para clínicas del sector estético en Colombia.",
+      "areaServed": [
+        { "@type": "City", "name": "Bogotá" },
+        { "@type": "City", "name": "Medellín" },
+        { "@type": "City", "name": "Cali" },
+        { "@type": "Country", "name": "Colombia" }
+      ],
+      "knowsLanguage": ["es", "en"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.vectamkt.com/#website",
+      "url": "https://www.vectamkt.com/",
+      "name": "Vecta",
+      "inLanguage": "es-CO",
+      "publisher": { "@id": "https://www.vectamkt.com/#organization" }
+    },
+    {
+      "@type": "Service",
+      "name": "Sistema Vecta - Captación de pacientes para clínicas estéticas",
+      "provider": { "@id": "https://www.vectamkt.com/#organization" },
+      "serviceType": "Marketing de captación de pacientes",
+      "areaServed": { "@type": "Country", "name": "Colombia" },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Clínicas de medicina estética, cirugía plástica, dermatología estética, odontología estética, trasplante capilar y medicina para bajar de peso"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planes Vecta",
+        "itemListElement": [
+          { "@type": "Offer", "name": "Esencial", "price": "690", "priceCurrency": "USD", "description": "Captación de pacientes locales, 4 anuncios al mes, guion de calificación y reporte mensual." },
+          { "@type": "Offer", "name": "Performance", "price": "890", "priceCurrency": "USD", "description": "Todo lo del plan Esencial más captación en búsquedas de Google, 6 a 8 anuncios al mes y reporte quincenal." },
+          { "@type": "Offer", "name": "Escala", "price": "1490", "priceCurrency": "USD", "description": "Para clínicas multi-sede: atención automática en WhatsApp, 10 a 12 anuncios al mes y panel de facturación." },
+          { "@type": "Offer", "name": "Turismo Médico", "price": "2900", "priceCurrency": "USD", "description": "Captación internacional bilingüe y acompañamiento del paciente hasta el día del procedimiento." }
+        ]
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 

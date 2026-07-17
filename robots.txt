@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Assets de marca e templates internos não precisam ser indexados
+Disallow: /brand/email-template.html
+Disallow: /brand/og-image.html
+Disallow: /backup-pre-teste-servicos/
+
+Sitemap: https://www.vectamkt.com/sitemap.xml
