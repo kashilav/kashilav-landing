@@ -19,7 +19,7 @@ const i18n = {
   es: {
     // NAV
     nav_sistema:"El sistema", nav_servicios:"Servicios", nav_proceso:"Cómo funciona", nav_planes:"Planes", nav_journey:"La experiencia",
-    nav_faq:"FAQ", nav_cta:"Diagnóstico gratuito",
+    nav_faq:"Preguntas", nav_cta:"Diagnóstico gratuito",
 
     // HERO
     hero_badge:"Sistema de captación de pacientes · Clínicas estéticas · Colombia",
@@ -27,23 +27,23 @@ const i18n = {
     hero_sub:"Instalamos en tu clínica el Sistema Vecta™: un proceso completo de captación, calificación y agendamiento de pacientes. Tú te concentras en atender. Nosotros llenamos la agenda y te mostramos cuánta facturación generó cada peso invertido.",
     hero_cta1:"Solicitar diagnóstico gratuito",
     hero_cta2:"Conocer el sistema",
-    hero_t1:"Captación bilingüe", hero_t2:"por procedimiento", hero_t3:"Precios públicos",
+    hero_t1:"Captación bilingüe", hero_t2:"por procedimiento", hero_t3:"componentes de inversión",
     demo_label:"Demostración del sistema", scroll_cue:"Explora el recorrido",
 
     // JORNADA INTERACTIVA
     journey_eyebrow:"Una experiencia conectada",
     journey_title:'De una búsqueda a una consulta.<br><em>Sin perder el hilo.</em>',
     journey_sub:"Recorre el sistema. Cada etapa conserva el contexto de la anterior para convertir interés en una oportunidad medible.",
-    journey_live:"Recorrido en vivo",
+    journey_live:"Recorrido en vivo", journey_mobile_hint:"Desliza para continuar",
     journey_scene_1:"01 · Descubrimiento", journey_scene_2:"02 · Conversación", journey_scene_3:"03 · Calificación", journey_scene_4:"04 · Agendamiento", journey_scene_5:"05 · Retorno",
     scene_search_query:"mejor clínica de rinoplastia en Bogotá", scene_sponsored:"Patrocinado",
     scene_search_title:"Rinoplastia con evaluación personalizada", scene_search_text:"Conoce opciones, tiempos y agenda una valoración.",
     scene_chat_1:"Hola, quiero saber si soy candidata para una rinoplastia.", scene_chat_2:"Claro. Te haré 3 preguntas para orientarte mejor.",
-    scene_profile:"Perfil del paciente", scene_intent:"Intención alta", scene_timing:"Decisión en 30 días", scene_location:"Bogotá",
+    scene_profile:"Perfil del paciente", scene_intent:"Intención alta", scene_timing:"Planea decidir en 30 días", scene_location:"Bogotá",
     scene_calendar:"Agenda clínica", scene_appointment:"Valoración · Rinoplastia",
     scene_result:"Resultado atribuible", scene_demo:"Simulación", scene_revenue:"Facturación asociada al procedimiento",
     journey_1_title:"Aparece cuando la intención ya existe", journey_1_text:"La clínica entra en la conversación en el momento exacto en que alguien busca un procedimiento.",
-    journey_2_title:"Responde mientras el interés está caliente", journey_2_text:"Un primer contacto claro y ágil evita que la oportunidad termine en la agenda de otra clínica.",
+    journey_2_title:"Responde mientras el interés sigue activo", journey_2_text:"Un primer contacto claro y ágil evita que la oportunidad termine en la agenda de otra clínica.",
     journey_3_title:"Separa curiosidad de intención real", journey_3_text:"El sistema organiza contexto, momento de decisión y procedimiento para priorizar cada conversación.",
     journey_4_title:"Convierte la conversación en una cita", journey_4_text:"Seguimiento, recordatorios y una ruta sencilla llevan al paciente hasta una valoración confirmada.",
     journey_5_title:"Conecta cada resultado con su origen", journey_5_text:"La clínica puede entender qué procedimiento, canal y conversación generaron facturación.",
@@ -54,21 +54,21 @@ const i18n = {
 
     // PROBLEMA
     prob_title:"¿Tu clínica es excelente, pero la agenda no se llena?",
-    prob_sub:"Cada semana, cientos de personas buscan en Google e Instagram los procedimientos que tu clínica ofrece. Sin un sistema que capte a esos pacientes, los califique y los lleve hasta la consulta, terminan agendando en otra parte. El boca a boca es valioso, pero no es previsible.",
+    prob_sub:"Cada semana, hay personas que buscan en Google e Instagram los procedimientos que ofrece tu clínica. Sin un sistema que capte esas oportunidades, las califique y las convierta en citas, pueden terminar eligiendo otra clínica. El voz a voz es valioso, pero no permite proyectar el crecimiento.",
 
     // EYEBROWS
     eyebrow_sys:"El método", eyebrow_proc:"El proceso", eyebrow_roi:"Retorno",
-    eyebrow_pq:"Fit", eyebrow_aut:"El mercado",
+    eyebrow_pq:"Perfil ideal", eyebrow_aut:"El mercado",
     eyebrow_planes:"Planes", eyebrow_faq:"Dudas",
 
     // SISTEMA VECTA (bento)
     sys_title:"Sistema Vecta™: así generamos pacientes",
-    sys_sub:"No vendemos anuncios sueltos. Instalamos un proceso completo que convierte búsquedas en consultas agendadas. Estas son sus cuatro piezas:",
+    sys_sub:"No vendemos anuncios aislados. Instalamos un proceso completo que convierte búsquedas en consultas programadas. Estos son sus cuatro componentes:",
     sys1_t:"1 · Captación", sys1_p:"Atraemos a las personas que ya buscan tu procedimiento en tu ciudad, con mensajes que hablan el idioma de tus pacientes y de tu especialidad.",
-    sys2_t:"2 · Calificación", sys2_p:"Filtramos a los curiosos y priorizamos a quienes tienen intención real de agendar, con guiones de conversación diseñados para el sector estético.",
+    sys2_t:"2 · Calificación", sys2_p:"Identificamos y priorizamos a quienes tienen una intención real de agendar, con guiones de conversación diseñados para el sector estético.",
     sys2_pill:"Intención real",
-    sys3_t:"3 · Agendamiento", sys3_p:"Respondemos rápido y llevamos cada conversación hasta una consulta confirmada en tu calendario. Cada hora de espera le regala pacientes a tu competencia.",
-    sys4_t:"4 · Medición y escala", sys4_p:"Cada mes sabes cuántos pacientes entraron, cuánto costó cada uno y cuánta facturación generó cada procedimiento. Con esos números validados, subimos la inversión en lo que funciona y cortamos lo que no.",
+    sys3_t:"3 · Agendamiento", sys3_p:"Respondemos con rapidez y llevamos cada conversación hasta una consulta confirmada en tu calendario. Cada hora de espera aumenta la posibilidad de que el paciente elija otra clínica.",
+    sys4_t:"4 · Medición y escala", sys4_p:"Cada mes sabes cuántos pacientes llegaron, cuánto costó captar a cada uno y cuánta facturación generó cada procedimiento. Con esos datos validados, aumentamos la inversión en lo que funciona y detenemos lo que no.",
     chip_pac:"Pacientes", chip_costo:"Costo por paciente", chip_fact:"Facturación",
 
     // SERVICIOS — hub
@@ -86,9 +86,9 @@ const i18n = {
     proc_title:"Cómo funciona, paso a paso",
     proc_sub:"Del primer análisis a la escala. Sin misterio y sin letra pequeña.",
     f1_t:"Diagnóstico", f1_p:"Analizamos tu clínica, tu competencia y tu procedimiento estrella. Gratis y en menos de 48 horas.",
-    f2_t:"Plan de captación", f2_p:"Definimos juntos la meta de pacientes, el presupuesto y el procedimiento que vamos a empujar primero.",
+    f2_t:"Plan de captación", f2_p:"Definimos contigo la meta de pacientes, el presupuesto y el procedimiento que vamos a priorizar.",
     f3_t:"Captación", f3_p:"Activamos los canales donde tus pacientes ya buscan. Las cuentas quedan siempre a tu nombre.",
-    f4_t:"Calificación", f4_p:"Filtramos a los curiosos y priorizamos a quienes tienen intención real de agendar una consulta.",
+    f4_t:"Calificación", f4_p:"Identificamos y priorizamos a quienes tienen una intención real de agendar una consulta.",
     f5_t:"Agendamiento", f5_p:"Llevamos cada conversación hasta una consulta confirmada en tu calendario, con seguimiento y recordatorios.",
     f6_t:"Conversión", f6_p:"Te apoyamos con guiones y seguimiento para que más consultas terminen en procedimientos realizados.",
     f7_t:"Escala", f7_p:"Con el costo por paciente validado, aumentamos la inversión y repetimos lo que ya demostró funcionar.",
@@ -96,25 +96,25 @@ const i18n = {
     // ROI
     roi_title:"Piensa en retorno, no en costo",
     roi_sub:"Mueve los controles y construye un escenario con los números de tu clínica.",
-    roi_ticket:"Ticket promedio", roi_patients:"Pacientes adicionales al mes", roi_investment:"Inversión mensual total",
+    roi_ticket:"Valor promedio del procedimiento", roi_patients:"Pacientes adicionales al mes", roi_investment:"Inversión mensual total",
     roi_scenario:"Escenario estimado", roi_revenue_label:"Facturación adicional", roi_per_month:"por mes",
-    roi_return_label:"Retorno sobre inversión", roi_balance_label:"Diferencia estimada",
-    roi_disclaimer:"Simulación educativa. No representa una promesa de resultados.",
-    roi_r1_l:"Ticket promedio de un procedimiento",
+    roi_return_label:"Facturación / inversión", roi_balance_label:"Facturación menos marketing",
+    roi_disclaimer:"Simulación educativa. No descuenta costos clínicos, impuestos ni representa una promesa de resultados.",
+    roi_r1_l:"Valor promedio de un procedimiento",
     roi_r2_l:"Pacientes adicionales por mes (meta inicial)",
     roi_r3_l:"Ingreso adicional por mes",
     roi_r4_l:"Inversión en el plan Esencial",
-    roi_r5_l:"Retorno sobre el honorario",
-    roi_note:"Es un ejemplo ilustrativo, no una promesa. En el diagnóstico gratuito hacemos este cálculo con tu ticket real y tu procedimiento estrella. Si las cuentas no cierran para tu clínica, te lo decimos antes de empezar.",
+    roi_r5_l:"Facturación dividida por la inversión total",
+    roi_note:"Es un ejemplo ilustrativo, no una promesa. En el diagnóstico gratuito hacemos este cálculo con el valor real de tu procedimiento principal. Si las cuentas no cierran para tu clínica, te lo decimos antes de empezar.",
     roi_cta:"Evaluar el potencial de mi clínica",
 
     // PARA QUIÉN
     pq_title:"¿Es para tu clínica?",
     pq_yes_t:"Es para ti si...",
     pq_yes_1:"Tu clínica ya está activa y tiene procedimientos consolidados",
-    pq_yes_2:"Quieres un flujo constante de pacientes nuevos, no depender solo del boca a boca",
-    pq_yes_3:"Puedes invertir un presupuesto mínimo de pauta (~US$500/mes, aparte del honorario)",
-    pq_yes_4:"Quieres atraer pacientes internacionales de alto ticket",
+    pq_yes_2:"Quieres un flujo constante de pacientes nuevos y no depender solo del voz a voz",
+    pq_yes_3:"Puedes invertir en pauta desde US$500 al mes, además de la tarifa de gestión y según el alcance de la campaña",
+    pq_yes_4:"Quieres atraer pacientes internacionales a procedimientos de alto valor",
     pq_yes_5:"Valoras reportes claros de facturación por procedimiento, no métricas de vanidad",
     pq_no_t:"No es para ti si...",
     pq_no_1:"Acabas de abrir y aún no tienes procedimientos definidos ni equipo médico",
@@ -123,62 +123,64 @@ const i18n = {
     pq_no_4:"Esperas resultados sin una inversión sostenida mínima de 60 días",
 
     // AUTORIDAD — el mercado
-    aut_title:"Por qué la mayoría de las clínicas pierde pacientes",
-    met1_l:"de las búsquedas en Colombia pasan por Google",
-    met2_l:"pacientes internacionales llegaron a Colombia en 2025",
-    met3_l:"de colombianos están conectados a internet",
+    aut_title:"Dónde se pierden oportunidades de nuevos pacientes",
+    met1_v:"≈94%", met2_v:"26.786", met3_v:"79,3%",
+    met1_l:"del mercado de buscadores en Colombia corresponde a Google",
+    met2_l:"registros de ingreso de extranjeros por tratamiento médico en Colombia durante 2025",
+    met3_l:"de las personas de 5 años o más usaron internet en Colombia en 2024",
+    met_sources:'Fuentes: <a href="https://gs.statcounter.com/search-engine-market-share/all-worldwide/colombia" target="_blank" rel="noopener">StatCounter, junio de 2026</a>; <a href="https://portal.migracioncolombia.gov.co/fileadmin/user_upload/Flujos_migratorios_de_extranjeras_os__en_Colombia_cierre_2025.pdf" target="_blank" rel="noopener">Migración Colombia, cierre de 2025</a>; y <a href="https://www.dane.gov.co/files/operaciones/ECV/bol-ECV-2024.pdf" target="_blank" rel="noopener">DANE, ECV 2024</a>.',
     err1_t:"Responder tarde",
-    err1_p:"Un paciente que pregunta por WhatsApp y espera horas ya le escribió a otras dos clínicas. La velocidad de respuesta define quién se queda con el paciente. Por eso el agendamiento es una pieza central del sistema, no un detalle.",
+    err1_p:"Un paciente que espera horas puede seguir comparando y contactar otras clínicas. Responder con rapidez mejora la oportunidad de continuar la conversación. Por eso el agendamiento es una pieza central del sistema, no un detalle.",
     err2_t:"Medir aplausos, no ingresos",
     err2_p:'Seguidores y "me gusta" no pagan la nómina. Si el reporte que recibes no muestra pacientes, procedimientos y facturación, no estás midiendo lo que importa. Nuestro reporte responde una sola pregunta: cuánto dinero generó cada peso invertido.',
-    err3_t:"Depender del boca a boca",
-    err3_p:"Es la mejor fuente de pacientes y también la menos controlable. Una clínica que quiere crecer necesita un canal propio que pueda encender, medir y escalar a voluntad. Eso es exactamente lo que el sistema construye.",
+    err3_t:"Depender del voz a voz",
+    err3_p:"Es una fuente valiosa de pacientes, pero también una de las menos predecibles. Una clínica que quiere crecer necesita un canal propio que pueda activar, medir y escalar de manera controlada. Eso es lo que construye el sistema.",
     aut_cta:"Descubrir dónde pierde pacientes mi clínica",
 
     // PLANES
     plan_title:"Planes y precios",
-    plan_sub:"Precios públicos, sin sorpresas. La inversión se divide en tres partes claras: honorario de gestión, pauta publicitaria y tecnología. La pauta y la tecnología van aparte y siempre a tu nombre. Tú ves cada peso.",
-    p_tag:"Más elegido", p_cta:"Empezar con el diagnóstico",
+    plan_sub:"Tarifas de gestión claras, sin sorpresas. La inversión total se divide en gestión, pauta publicitaria y, cuando corresponda, tecnología. Antes de empezar definimos el total estimado; las cuentas y los pagos quedan a tu nombre.",
+    p_tag:"Recomendado", p_cta:"Empezar con el diagnóstico",
     p1_t:"Esencial", p1_for:"Para dar el primer paso hacia una captación profesional",
-    p1_1:"Captación de pacientes locales", p1_2:"4 anuncios nuevos al mes", p1_3:"Guion de calificación para tu WhatsApp", p1_4:"Reporte mensual de resultados + reunión",
-    p2_t:"Performance", p2_for:"Para llenar la agenda con constancia",
-    p2_1:"Todo lo del plan Esencial", p2_2:"Captación en búsquedas de Google", p2_3:"6 a 8 anuncios al mes", p2_4:"Reactivación de tus pacientes existentes", p2_5:"Reporte quincenal + 2 reuniones al mes",
-    p3_t:"Escala", p3_for:"Para clínicas multi-sede o de alto volumen",
-    p3_1:"Todo lo del plan Performance", p3_2:"Atención automática 24/7 en tu WhatsApp", p3_3:"10 a 12 anuncios al mes", p3_4:"Panel de facturación en vivo", p3_5:"Reunión semanal de resultados",
+    p1_1:"Captación de pacientes locales", p1_2:"4 anuncios nuevos al mes", p1_3:"Guion de calificación para tu WhatsApp", p1_4:"Informe mensual de resultados + reunión",
+    p2_t:"Performance", p2_for:"Para generar citas de manera constante",
+    p2_1:"Todo lo del plan Esencial", p2_2:"Captación mediante búsquedas en Google", p2_3:"6 a 8 anuncios al mes", p2_4:"Reactivación de tu base de pacientes", p2_5:"Informe cada dos semanas + 2 reuniones al mes",
+    p3_t:"Escala", p3_for:"Para clínicas multisede o de alto volumen",
+    p3_1:"Todo lo del plan Performance", p3_2:"Respuestas automáticas 24/7 en WhatsApp", p3_3:"10 a 12 anuncios al mes", p3_4:"Panel de facturación en tiempo real", p3_5:"Reunión semanal de resultados",
     p4_tag:"Oferta premium",
-    p4_t:"Turismo Médico", p4_for:"Pacientes internacionales de alto ticket",
+    p4_t:"Turismo Médico", p4_for:"Para atraer pacientes internacionales a procedimientos de alto valor",
     p4_1:"Todo lo del plan Escala", p4_2:"Captación internacional en inglés y español", p4_3:"Páginas por procedimiento en dos idiomas", p4_4:"Seguimiento multilingüe por WhatsApp", p4_5:"Acompañamiento del paciente desde el primer contacto hasta el día del procedimiento",
-    p4_roi:"Un paciente internacional de rinoplastia representa entre US$3.000 y US$8.000 para tu clínica. Con un solo paciente al mes, el plan se paga solo.",
+    p4_roi:"El retorno depende del valor promedio del procedimiento, el margen clínico, la pauta y la conversión real. En el diagnóstico calculamos el punto de equilibrio con los números de tu clínica; no asumimos que un solo paciente cubre toda la inversión.",
     p4_cta:"Evaluar mi potencial internacional",
-    plan_scarcity:"Trabajamos con un número limitado de clínicas por ciudad y por especialidad. No captamos pacientes para dos competidores directos al mismo tiempo. La disponibilidad de tu ciudad se confirma en el diagnóstico.",
-    plan_guar:"Garantía de 60 días: si no alcanzamos el volumen de pacientes potenciales acordado en el diagnóstico, el segundo mes de gestión es gratis.",
+    plan_scarcity:"Trabajamos con un número limitado de clínicas por ciudad y especialidad. No gestionamos campañas para dos competidores directos al mismo tiempo. La disponibilidad en tu ciudad se confirma durante el diagnóstico.",
+    plan_guar:"Garantía de 60 días: si no alcanzamos la meta de oportunidades calificadas definida por escrito, devolvemos la tarifa de gestión del segundo mes.",
 
     // GARANTÍA
-    gar_title:"Garantía de resultado real",
-    gar_text:"Si en 60 días no alcanzamos el volumen de pacientes potenciales acordado, el segundo mes de gestión es gratis. Sin letras pequeñas.",
+    gar_title:"Garantía de gestión medible",
+    gar_text:"Antes de empezar definimos por escrito qué entendemos por una oportunidad calificada y cuál es la meta de 60 días. Si no la alcanzamos, devolvemos la tarifa de gestión del segundo mes. La pauta y la tecnología no están incluidas porque se pagan directamente a terceros.",
 
     // FAQ
     faq_title:"Preguntas frecuentes",
     faq1_q:"¿Qué pasa si ya trabajé con otra agencia y no funcionó?",
-    faq1_a:'Es la situación más común que escuchamos. La mayoría de las agencias optimiza por alcance o "me gusta", no por pacientes. Nuestra primera sesión, el diagnóstico gratuito, analiza exactamente qué falló antes y por qué. Solo arrancamos si tenemos claridad de que podemos hacerlo mejor. Y si en 60 días no alcanzamos la meta acordada, el segundo mes de gestión es gratis.',
+    faq1_a:'En el diagnóstico gratuito revisamos qué se hizo antes, cómo se midió y en qué punto se perdieron oportunidades. Solo proponemos una campaña cuando existe un plan con objetivos medibles. Si en 60 días no alcanzamos la meta de oportunidades calificadas definida por escrito, devolvemos la tarifa de gestión del segundo mes.',
     faq2_q:"¿En cuánto tiempo veo resultados?",
-    faq2_a:"Los primeros pacientes potenciales suelen aparecer entre la semana 2 y la semana 4, dependiendo del presupuesto de pauta y del procedimiento. Resultados consistentes y escalables se consolidan entre el mes 2 y el mes 3. Por eso nuestra garantía es de 60 días: es el tiempo mínimo honesto para juzgar un sistema de captación.",
-    faq3_q:"¿Necesito invertir en anuncios aparte del honorario?",
-    faq3_a:"Sí. La pauta publicitaria es el combustible del sistema y va aparte del honorario de gestión. Recomendamos un mínimo de US$500 al mes para arrancar. Ese dinero nunca pasa por nosotros: la cuenta publicitaria es tuya, el pago va directo a la plataforma y tú ves cada peso invertido.",
+    faq2_a:"Como referencia, una campaña nueva puede necesitar hasta unas 3 semanas de aprendizaje, según el volumen y el ciclo de conversión. Por eso evaluamos la tendencia durante 60 días, no por resultados aislados de la primera semana. El plazo real depende del procedimiento, la ciudad, el presupuesto y la capacidad de respuesta de la clínica.",
+    faq3_q:"¿Debo invertir en pauta además de la tarifa de gestión?",
+    faq3_a:"Sí. Para una primera campaña enfocada en un procedimiento y una ciudad, usamos US$500 al mes como referencia inicial. Si incluimos más canales, ciudades o procedimientos, el presupuesto necesario puede ser mayor. El pago va directo a la plataforma desde una cuenta que queda a tu nombre.",
     faq4_q:"¿Cómo sé que el retorno será positivo antes de pagar?",
-    faq4_a:"No puedes saberlo con certeza antes de arrancar. Nadie honesto te prometería eso. Lo que sí hacemos: en el diagnóstico gratuito estimamos el costo por paciente esperado para tu procedimiento y tu ciudad, y acordamos juntos una meta. Si los números no cierran, te lo decimos antes de que pagues un peso. Y si arrancamos y en 60 días no alcanzamos la meta acordada, el segundo mes de gestión es gratis.",
-    faq5_q:"¿Entienden los procedimientos estéticos o son una agencia genérica?",
-    faq5_a:"Trabajamos únicamente con clínicas del sector estético: medicina estética y armonización facial, cirugía plástica, dermatología estética, odontología estética, trasplante capilar y medicina para bajar de peso. Conocemos la diferencia entre rinoplastia abierta y cerrada, entre toxina botulínica y fillers, y cómo cada procedimiento tiene un ciclo de decisión distinto en el paciente. Eso cambia el mensaje, la segmentación y la página de destino. Una agencia genérica no puede hacer eso bien.",
-    faq6_q:"¿Trabajan solo con Bogotá?",
-    faq6_a:"Hoy trabajamos con clínicas en Bogotá, Medellín y Cali. La operación es 100% remota, así que la ciudad no limita la calidad del servicio. Lo que sí limita es nuestra política de exclusividad: aceptamos un número limitado de clínicas por ciudad y por especialidad, para no captar pacientes para dos competidores directos a la vez.",
+    faq4_a:"No es posible saberlo con certeza antes de empezar. En el diagnóstico estimamos el punto de equilibrio con el valor promedio del procedimiento, el margen clínico, la inversión total y una meta de conversión. Si el escenario no es viable, te lo decimos antes de contratar. La garantía cubre la meta de oportunidades calificadas definida por escrito; no promete facturación ni procedimientos realizados.",
+    faq5_q:"¿Conocen el sector estético o trabajan con todo tipo de negocios?",
+    faq5_a:"Trabajamos únicamente con clínicas del sector estético: medicina estética y armonización facial, cirugía plástica, dermatología estética, odontología estética, trasplante capilar y medicina para el control de peso. Conocemos la diferencia entre una rinoplastia abierta y una cerrada, entre la toxina botulínica y los rellenos dérmicos, y entendemos que cada procedimiento tiene un ciclo de decisión diferente. Ese conocimiento cambia el mensaje, la segmentación y la página de destino.",
+    faq6_q:"¿Solo trabajan en Bogotá?",
+    faq6_a:"Prestamos el servicio a clínicas en Bogotá, Medellín y Cali. La operación es completamente remota, por lo que la ciudad no afecta la calidad del servicio. Sí aplicamos una política de exclusividad: aceptamos un número limitado de clínicas por ciudad y especialidad para no gestionar campañas de dos competidores directos al mismo tiempo.",
     faq7_q:"¿Puedo contratar solo una parte del servicio?",
-    faq7_a:"El sistema funciona como un proceso completo: captar sin calificar llena tu WhatsApp de curiosos, y calificar sin agendar deja pacientes a mitad de camino. Por eso no vendemos piezas sueltas. Lo que sí existe son planes por etapa de crecimiento: el plan Esencial es la puerta de entrada con la versión más compacta del sistema.",
+    faq7_a:"El sistema funciona como un proceso completo: captar sin calificar llena tu WhatsApp de contactos sin intención clara, y calificar sin agendar deja pacientes a mitad de camino. Por eso no vendemos servicios aislados. Contamos con planes para cada etapa de crecimiento; el plan Esencial es la puerta de entrada con la versión más compacta del sistema.",
     faq8_q:"¿Tienen experiencia con turismo médico y pacientes internacionales?",
     faq8_a:"Es nuestra oferta premium. La captación internacional funciona distinto: el paciente investiga más, compara países y necesita confianza antes de viajar. Por eso el plan Turismo Médico incluye captación en inglés y español, páginas por procedimiento en dos idiomas, seguimiento multilingüe por WhatsApp y acompañamiento del paciente desde el primer contacto hasta el día del procedimiento.",
     faq9_q:"¿Hay permanencia mínima? ¿De quién son las cuentas publicitarias?",
-    faq9_a:"No hay permanencia mínima. Trabajamos mes a mes porque el cliente debe quedarse por resultados, no por contrato. Las cuentas publicitarias son siempre tuyas: las creamos a tu nombre o trabajamos en las que ya tienes. Si decides salir mañana, te llevas el histórico, los públicos y todos los datos acumulados.",
+    faq9_a:"No hay permanencia mínima. Trabajamos mes a mes porque queremos que continúes por los resultados, no por una obligación contractual. Las cuentas publicitarias siempre son tuyas: las creamos a tu nombre o trabajamos con las que ya tienes. Si decides terminar el servicio, conservas el historial, las audiencias y todos los datos acumulados.",
     faq10_q:"¿Qué diferencia a Vecta de otras agencias?",
-    faq10_a:"Cuatro cosas. Uno: trabajamos únicamente con clínicas del sector estético, no con cualquier negocio. Dos: instalamos un sistema completo de captación, calificación y agendamiento, no anuncios sueltos. Tres: medimos en pacientes y facturación por procedimiento, no en seguidores. Cuatro: limitamos el número de clínicas por ciudad y especialidad, y respaldamos el trabajo con una garantía real de 60 días.",
+    faq10_a:"Cuatro aspectos. Primero, trabajamos únicamente con clínicas del sector estético. Segundo, instalamos un sistema completo de captación, calificación y agendamiento, no campañas aisladas. Tercero, medimos pacientes y facturación por procedimiento, no seguidores. Por último, limitamos el número de clínicas por ciudad y especialidad, y respaldamos el trabajo con una garantía de gestión medible a 60 días.",
     faq_cta:"Recibir un análisis estratégico",
 
     // FORMULARIO
@@ -186,13 +188,13 @@ const i18n = {
     form_sub:"20 minutos, sin compromiso. Te mostramos dónde está el potencial de captación de tu clínica y qué haríamos con él. Te sirve aunque decidas no trabajar con nosotros.",
     form_nombre_l:"Tu nombre", form_wa_l:"WhatsApp (con código de país)", form_proc_l:"Procedimiento principal de tu clínica",
     form_proc_ph:"Selecciona un procedimiento...",
-    proc_rino:"Rinoplastia", proc_botu:"Toxina botulínica / Botox", proc_fill:"Rellenos / Fillers",
+    proc_rino:"Rinoplastia", proc_botu:"Toxina botulínica / Botox", proc_fill:"Rellenos dérmicos",
     proc_lipo:"Liposucción / Corporal", proc_impl:"Implantes", proc_face:"Tratamientos faciales / Láser",
     proc_odont:"Odontología estética", proc_capilar:"Trasplante capilar", proc_otro:"Otro",
     form_btn:"Solicitar diagnóstico gratuito",
     form_wa_alt:"¿Prefieres hablar ahora?", form_wa_link:"Escríbenos por WhatsApp",
     form_micro:"Sin permanencia mínima · Sin porcentaje sobre tu pauta · Tus cuentas publicitarias son siempre tuyas.",
-    form_pd:"P.D. El diagnóstico es gratuito y lo preparamos en menos de 48 horas.",
+    form_pd:"Además, preparamos tu diagnóstico gratuito en menos de 48 horas.",
     err_nombre:"Por favor ingresa tu nombre.",
     err_wa:"Por favor ingresa tu WhatsApp con código de país.",
     err_proc:"Por favor selecciona el procedimiento principal.",
@@ -212,14 +214,14 @@ const i18n = {
     hero_sub:"We install the Vecta System™ in your clinic: a complete process for attracting, qualifying and booking patients. You focus on treating them. We fill the calendar and show you how much revenue every dollar generated.",
     hero_cta1:"Request your free growth audit",
     hero_cta2:"See how the system works",
-    hero_t1:"Bilingual acquisition", hero_t2:"per procedure", hero_t3:"Public pricing",
+    hero_t1:"Bilingual acquisition", hero_t2:"per procedure", hero_t3:"Clear cost parts",
     demo_label:"System demonstration", scroll_cue:"Explore the journey",
 
     // INTERACTIVE JOURNEY
     journey_eyebrow:"One connected experience",
     journey_title:'From a search to a consultation.<br><em>Without losing context.</em>',
     journey_sub:"Explore the system. Each stage keeps the context from the previous one to turn interest into a measurable opportunity.",
-    journey_live:"Live journey",
+    journey_live:"Live journey", journey_mobile_hint:"Scroll to continue",
     journey_scene_1:"01 · Discovery", journey_scene_2:"02 · Conversation", journey_scene_3:"03 · Qualification", journey_scene_4:"04 · Booking", journey_scene_5:"05 · Return",
     scene_search_query:"best rhinoplasty clinic in Bogotá", scene_sponsored:"Sponsored",
     scene_search_title:"Rhinoplasty with a personalized evaluation", scene_search_text:"Explore options, timing and book an evaluation.",
@@ -239,7 +241,7 @@ const i18n = {
 
     // PROBLEMA
     prob_title:"Great clinic, but the calendar won't fill up?",
-    prob_sub:"Every week, hundreds of people search Google and Instagram for the procedures your clinic offers. Without a system that captures those patients, qualifies them and walks them to the consultation, they end up booking somewhere else. Word of mouth is valuable, but it is not predictable.",
+    prob_sub:"Every week, people search Google and Instagram for the procedures your clinic offers. Without a system that captures those opportunities, qualifies them and walks them to the consultation, they may end up booking somewhere else. Word of mouth is valuable, but it is not predictable.",
 
     // EYEBROWS
     eyebrow_sys:"The method", eyebrow_proc:"The process", eyebrow_roi:"Return",
@@ -283,13 +285,13 @@ const i18n = {
     roi_sub:"Move the controls and build a scenario with your clinic's numbers.",
     roi_ticket:"Average ticket", roi_patients:"Additional patients per month", roi_investment:"Total monthly investment",
     roi_scenario:"Estimated scenario", roi_revenue_label:"Additional revenue", roi_per_month:"per month",
-    roi_return_label:"Return on investment", roi_balance_label:"Estimated difference",
-    roi_disclaimer:"Educational simulation. This is not a promise of results.",
+    roi_return_label:"Revenue / investment", roi_balance_label:"Revenue minus marketing",
+    roi_disclaimer:"Educational simulation. It does not deduct clinical costs or taxes and is not a promise of results.",
     roi_r1_l:"Average ticket of one procedure",
     roi_r2_l:"Additional patients per month (initial target)",
     roi_r3_l:"Additional revenue per month",
     roi_r4_l:"Investment in the Essential plan",
-    roi_r5_l:"Return on the management fee",
+    roi_r5_l:"Revenue divided by total investment",
     roi_note:"This is an illustrative example, not a promise. In the free audit we run this math with your real ticket and your star procedure. If the numbers don't work for your clinic, we tell you before you start.",
     roi_cta:"Evaluate my clinic's potential",
 
@@ -298,7 +300,7 @@ const i18n = {
     pq_yes_t:"It's for you if...",
     pq_yes_1:"Your clinic is already active and has established procedures",
     pq_yes_2:"You want a steady flow of new patients, not to depend only on word of mouth",
-    pq_yes_3:"You can invest a minimum ad budget (~US$500/month, separate from the fee)",
+    pq_yes_3:"You can invest in ads starting at US$500/month, separate from the fee and based on campaign scope",
     pq_yes_4:"You want to attract high-ticket international patients",
     pq_yes_5:"You value clear revenue reports per procedure, not vanity metrics",
     pq_no_t:"It's not for you if...",
@@ -309,11 +311,13 @@ const i18n = {
 
     // AUTORIDAD
     aut_title:"Why most clinics lose patients",
-    met1_l:"of searches in Colombia go through Google",
-    met2_l:"international patients arrived in Colombia in 2025",
-    met3_l:"Colombians are connected to the internet",
+    met1_v:"≈94%", met2_v:"26,786", met3_v:"79.3%",
+    met1_l:"of Colombia's search engine market corresponds to Google",
+    met2_l:"foreign entries for medical treatment in Colombia during 2025",
+    met3_l:"of people aged 5 or older used the internet in Colombia in 2024",
+    met_sources:'Sources: <a href="https://gs.statcounter.com/search-engine-market-share/all-worldwide/colombia" target="_blank" rel="noopener">StatCounter, June 2026</a>; <a href="https://portal.migracioncolombia.gov.co/fileadmin/user_upload/Flujos_migratorios_de_extranjeras_os__en_Colombia_cierre_2025.pdf" target="_blank" rel="noopener">Migración Colombia, year-end 2025</a>; and <a href="https://www.dane.gov.co/files/operaciones/ECV/bol-ECV-2024.pdf" target="_blank" rel="noopener">DANE, ECV 2024</a>.',
     err1_t:"Replying late",
-    err1_p:"A patient who asks on WhatsApp and waits for hours has already messaged two other clinics. Response speed decides who keeps the patient. That's why booking is a core piece of the system, not a detail.",
+    err1_p:"A patient who waits for hours may keep comparing and contact other clinics. A fast response improves the chance of continuing the conversation. That's why booking is a core piece of the system, not a detail.",
     err2_t:"Measuring applause, not income",
     err2_p:'Followers and "likes" don\'t pay payroll. If the report you receive doesn\'t show patients, procedures and revenue, you are not measuring what matters. Our report answers one question: how much money every dollar generated.',
     err3_t:"Depending on word of mouth",
@@ -322,8 +326,8 @@ const i18n = {
 
     // PLANES
     plan_title:"Plans & pricing",
-    plan_sub:"Public pricing, no surprises. The investment splits into three clear parts: management fee, ad spend and technology. Ad spend and technology are separate and always in your name. You see every dollar.",
-    p_tag:"Most chosen", p_cta:"Start with the audit",
+    plan_sub:"Public management fees, no surprises. Total investment is divided into management, ad spend and, when applicable, technology. Before starting, we define the estimated total; accounts and payments remain in your name.",
+    p_tag:"Recommended", p_cta:"Start with the audit",
     p1_t:"Essential", p1_for:"Your first step into professional patient acquisition",
     p1_1:"Local patient acquisition", p1_2:"4 new ads per month", p1_3:"Qualification script for your WhatsApp", p1_4:"Monthly results report + meeting",
     p2_t:"Performance", p2_for:"To fill the calendar consistently",
@@ -333,25 +337,25 @@ const i18n = {
     p4_tag:"Premium offer",
     p4_t:"Medical Tourism", p4_for:"High-ticket international patients",
     p4_1:"Everything in Scale", p4_2:"International acquisition in English and Spanish", p4_3:"Per-procedure pages in two languages", p4_4:"Multilingual WhatsApp follow-up", p4_5:"Patient guidance from first contact to procedure day",
-    p4_roi:"One international rhinoplasty patient represents US$3,000 to US$8,000 for your clinic. With just one patient per month, the plan pays for itself.",
+    p4_roi:"Return depends on average ticket, clinical margin, ad spend and actual conversion. During the audit, we calculate the break-even point using your clinic's numbers; we do not assume one patient covers the entire investment.",
     p4_cta:"Evaluate my international potential",
     plan_scarcity:"We work with a limited number of clinics per city and per specialty. We never acquire patients for two direct competitors at the same time. Availability for your city is confirmed in the audit.",
-    plan_guar:"60-day guarantee: if we don't reach the volume of potential patients agreed in the audit, the second month of management is free.",
+    plan_guar:"60-day guarantee: if we do not reach the written target for qualified opportunities, we refund the second month's management fee.",
 
     // GARANTÍA
-    gar_title:"Real results guarantee",
-    gar_text:"If in 60 days we don't reach the agreed volume of potential patients, the second month of management is free. No fine print.",
+    gar_title:"Measurable management guarantee",
+    gar_text:"Before starting, we define in writing what a qualified opportunity is and the 60-day target. If we do not reach it, we refund the second month's management fee. Ad spend and technology are excluded because they are paid directly to third parties.",
 
     // FAQ
     faq_title:"Frequently asked questions",
     faq1_q:"What if I already worked with another agency and it didn't work?",
-    faq1_a:'It\'s the most common situation we hear. Most agencies optimize for reach or "likes", not patients. Our first session, the free audit, analyzes exactly what failed before and why. We only start if we are confident we can do better. And if in 60 days we don\'t reach the agreed target, the second month of management is free.',
+    faq1_a:'During the free audit, we review what was done before, how it was measured and where conversion was lost. We only propose a campaign when there is a measurable hypothesis. If we do not reach the written 60-day target for qualified opportunities, we refund the second month\'s management fee.',
     faq2_q:"How long until I see results?",
-    faq2_a:"The first potential patients usually appear between week 2 and week 4, depending on ad budget and procedure. Consistent, scalable results consolidate between month 2 and month 3. That's why our guarantee is 60 days: it's the minimum honest time to judge an acquisition system.",
+    faq2_a:"As a reference, a new campaign may need up to about 3 weeks of learning, depending on volume and the conversion cycle. That is why we evaluate the trend over 60 days, not isolated results from the first week. Actual timing depends on the procedure, city, budget and the clinic's response capacity.",
     faq3_q:"Do I need to invest in ads on top of the fee?",
-    faq3_a:"Yes. Paid media is the fuel of the system and is separate from the management fee. We recommend a minimum of US$500 per month to start. That money never passes through us: the ad account is yours, payment goes directly to the platform and you see every dollar invested.",
+    faq3_a:"Yes. For an initial campaign focused on one procedure and one city, we use US$500 per month as a starting reference. If we include more channels, cities or procedures, the required budget may be higher. Payment goes directly to the platform from an account in your name.",
     faq4_q:"How do I know the return will be positive before paying?",
-    faq4_a:"You can't know for certain before starting. No honest person would promise that. What we do: in the free audit we estimate the expected cost per patient for your procedure and your city, and we agree on a target together. If the numbers don't work, we tell you before you pay a cent. And if we start and don't reach the agreed target in 60 days, the second month of management is free.",
+    faq4_a:"It cannot be known with certainty before starting. During the audit, we estimate the break-even point using average ticket, clinical margin, total investment and a conversion target. If the scenario is not viable, we say so before you hire us. The guarantee covers the written target for qualified opportunities; it does not promise revenue or completed procedures.",
     faq5_q:"Do you understand aesthetic procedures or are you a generic agency?",
     faq5_a:"We work only with clinics in the aesthetic sector: aesthetic medicine and facial harmonization, plastic surgery, aesthetic dermatology, aesthetic dentistry, hair transplant and medical weight loss. We know the difference between open and closed rhinoplasty, between botulinum toxin and fillers, and how each procedure has a different decision cycle. That changes the message, the targeting and the landing page. A generic agency can't do that well.",
     faq6_q:"Do you only work with Bogotá?",
@@ -363,7 +367,7 @@ const i18n = {
     faq9_q:"Is there a minimum commitment? Who owns the ad accounts?",
     faq9_a:"There is no minimum commitment. We work month to month because clients should stay for results, not because of a contract. The ad accounts are always yours: we create them in your name or work within the ones you already have. If you decide to leave tomorrow, you take the history, the audiences and all the accumulated data.",
     faq10_q:"What makes Vecta different from other agencies?",
-    faq10_a:"Four things. One: we work only with clinics in the aesthetic sector, not with any business. Two: we install a complete system for attracting, qualifying and booking patients, not loose ads. Three: we measure in patients and revenue per procedure, not followers. Four: we limit the number of clinics per city and specialty, and we back the work with a real 60-day guarantee.",
+    faq10_a:"Four things. One: we work only with clinics in the aesthetic sector, not with just any business. Two: we install a complete system for attracting, qualifying and booking patients, not isolated campaigns. Three: we measure patients and revenue per procedure, not followers. Four: we limit the number of clinics per city and specialty, and we back the work with a measurable 60-day management guarantee.",
     faq_cta:"Get a strategic analysis",
 
     // FORMULARIO
@@ -430,6 +434,10 @@ function setLang(l) {
   if (visual && sceneLabel) {
     const scene = visual.dataset.scene || '1';
     sceneLabel.textContent = i18n[l][`journey_scene_${scene}`] || '';
+    const mobileTitle = document.getElementById('journeyMobileTitle');
+    const mobileText = document.getElementById('journeyMobileText');
+    if (mobileTitle) mobileTitle.textContent = i18n[l][`journey_${scene}_title`] || '';
+    if (mobileText) mobileText.textContent = i18n[l][`journey_${scene}_text`] || '';
   }
 
   // Reformatar valores da calculadora para o idioma ativo
@@ -479,27 +487,78 @@ document.getElementById('langToggle').addEventListener('click', () => setLang(la
   const visual = document.getElementById('journeyVisual');
   const progress = document.getElementById('journeyProgress');
   const label = document.getElementById('journeySceneLabel');
+  const mobileCopy = document.getElementById('journeyMobileCopy');
+  const mobileStep = document.getElementById('journeyMobileStep');
+  const mobileTitle = document.getElementById('journeyMobileTitle');
+  const mobileText = document.getElementById('journeyMobileText');
   const steps = [...document.querySelectorAll('[data-journey-step]')];
+  const mobileViewport = window.matchMedia('(max-width: 900px)');
   if (!visual || !steps.length) return;
 
   function setScene(scene) {
     const next = String(scene);
-    if (visual.dataset.scene === next) return;
+    const changed = visual.dataset.scene !== next;
     visual.dataset.scene = next;
     steps.forEach(step => step.classList.toggle('is-active', step.dataset.journeyStep === next));
     if (progress) progress.style.width = `${Number(next) * 20}%`;
     if (label) label.textContent = i18n[lang][`journey_scene_${next}`] || '';
+    if (mobileStep) mobileStep.textContent = next.padStart(2, '0');
+    if (mobileTitle) mobileTitle.textContent = i18n[lang][`journey_${next}_title`] || '';
+    if (mobileText) mobileText.textContent = i18n[lang][`journey_${next}_text`] || '';
+    if (changed && mobileCopy) {
+      mobileCopy.classList.remove('is-changing');
+      void mobileCopy.offsetWidth;
+      mobileCopy.classList.add('is-changing');
+    }
   }
 
   const observer = new IntersectionObserver(entries => {
+    if (mobileViewport.matches) return;
     const visible = entries
       .filter(entry => entry.isIntersecting)
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (visible) setScene(visible.target.dataset.journeyStep);
   }, { threshold: [0.2, 0.45, 0.7], rootMargin: '-18% 0px -28% 0px' });
 
+  let mobileRafPending = false;
+
+  function updateMobileScene() {
+    mobileRafPending = false;
+    if (!mobileViewport.matches) return;
+
+    // Uma linha fixa logo abaixo do bloco visual decide a etapa ativa.
+    // Isso evita que duas interseções concorrentes façam a cena piscar.
+    const focusY = Math.min(window.innerHeight * .72, window.innerHeight - 110);
+    let closestStep = steps[0];
+    let closestDistance = Infinity;
+
+    steps.forEach(step => {
+      const rect = step.getBoundingClientRect();
+      const center = rect.top + rect.height / 2;
+      const distance = Math.abs(center - focusY);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestStep = step;
+      }
+    });
+
+    setScene(closestStep.dataset.journeyStep);
+  }
+
+  function queueMobileSceneUpdate() {
+    if (!mobileViewport.matches || mobileRafPending) return;
+    mobileRafPending = true;
+    requestAnimationFrame(updateMobileScene);
+  }
+
   steps.forEach(step => observer.observe(step));
   setScene('1');
+  window.addEventListener('scroll', queueMobileSceneUpdate, { passive: true });
+  window.addEventListener('resize', queueMobileSceneUpdate, { passive: true });
+  mobileViewport.addEventListener('change', () => {
+    if (mobileViewport.matches) queueMobileSceneUpdate();
+  });
+  queueMobileSceneUpdate();
 })();
 
 // ===== CALCULADORA DE RETORNO =====
