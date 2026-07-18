@@ -99,7 +99,7 @@ const i18n = {
     roi_ticket:"Valor promedio del procedimiento", roi_patients:"Pacientes adicionales al mes", roi_investment:"Inversión mensual total",
     roi_scenario:"Escenario estimado", roi_revenue_label:"Facturación adicional", roi_per_month:"por mes",
     roi_return_label:"Facturación / inversión", roi_balance_label:"Facturación menos marketing",
-    roi_disclaimer:"Simulación educativa. No descuenta costos clínicos, impuestos ni representa una promesa de resultados.",
+    roi_disclaimer:"Simulación educativa. No descuenta costos clínicos ni impuestos, ni constituye una promesa de resultados.",
     roi_r1_l:"Valor promedio de un procedimiento",
     roi_r2_l:"Pacientes adicionales por mes (meta inicial)",
     roi_r3_l:"Ingreso adicional por mes",
