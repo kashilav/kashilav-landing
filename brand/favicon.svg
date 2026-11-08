@@ -1,11 +1,1 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vecta">
-  <!-- Favicon: com fundo, pra não sumir em tamanho pequeno (o mark "limpo" não tem fundo) -->
-  <rect width="32" height="32" rx="9" fill="#0B0D11"/>
-  <path d="M8 23L23 8M15 8H23V16" stroke="url(#vectaGradFav)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <defs>
-    <linearGradient id="vectaGradFav" x1="8" y1="23" x2="23" y2="8" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2FD4C4"/>
-      <stop offset="1" stop-color="#14B8A6"/>
-    </linearGradient>
-  </defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Vecta" shape-rendering="geometricPrecision"><rect width="32" height="32" rx="8" fill="#07080B"/><svg x="4" y="4" width="24" height="24" viewBox="55 33 420 420"><defs><linearGradient id="vgs" x1="96" y1="376" x2="452" y2="92" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0F7F70"/><stop offset=".55" stop-color="#2BC7AE"/><stop offset="1" stop-color="#B5F7EA"/></linearGradient></defs><path d="M96 120 L228 376 C262 290 318 196 378 150" fill="none" stroke="url(#vgs)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/><path d="M458.9 87.9 L413.7 193.2 L345.5 104.4 Z" fill="url(#vgs)" stroke="url(#vgs)" stroke-width="18" stroke-linejoin="round"/></svg></svg>
